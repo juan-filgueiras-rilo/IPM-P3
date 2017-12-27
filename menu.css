@@ -1,0 +1,49 @@
+.menu {
+	position: fixed;
+}
+
+.sub-menu {
+	position:relative;
+}
+
+.menu, .sub-menu {
+	height: 100%;
+    width: 200px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #111;
+	text-align: center;
+}
+
+.main-item {
+	display:block;
+}
+
+.main-item a {
+	transition: background .25s ease-in-out;
+	background-color: #111;
+	color:white;
+}
+
+.main-item > .sub-menu {
+	display:none;
+}
+
+.main-item:hover {
+	background-color: #444;
+}
+
+.main-item:hover > .sub-menu {
+	display:block;
+	background-color: #365;
+	height: auto;
+}
+
+.sub-item:hover {
+	
+}
+
+.sub-menu a {
+	transition: background .25s ease-in-out;
+}
