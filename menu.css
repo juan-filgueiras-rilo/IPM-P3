@@ -1,6 +1,19 @@
-.menu {
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  font-family: sans-serif;
+}
+/*Toda la página*/
+body {
+	background-color: white;
+}
+/*Sidenav*/
+.side-menu nav {
 	position: fixed;
-	display: block;
+	display: inline-block;
+	left: -225px;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
 }
 
 .sub-menu {
@@ -9,7 +22,7 @@
 
 .menu, .sub-menu {
 	height: 100%;
-    width: 200px;
+    width: 225px;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -17,11 +30,8 @@
 	text-align: left;
 }
 
-.main-item {
-	transition: background .35s ease-in-out;
-}
-
 .main-item a {
+	display: block;
 	background-color: #111;
 	color: white;
 	transition: background .35s ease-in-out;
@@ -31,7 +41,7 @@
 	display:none;
 }
 
-.main-item:hover, .main-item:hover > a {
+.main-item:hover > a {
 	background-color: #444;
 }
 
@@ -45,7 +55,7 @@
 	transition: background .35s ease-in-out;
 }
 
-.sub-item:hover, .sub-item:hover > a {
+.sub-item:hover > a {
 	background-color: #368;
 }
 
@@ -54,3 +64,66 @@
 	color:black;
 	transition: background .35s ease-in-out;
 }
+
+/*Hamburger button*/
+.hamburger {
+	position: fixed;
+	z-index: 9999;
+	padding: 15px;
+}
+ 
+.hamburger:hover {
+	cursor: pointer;
+}
+ 
+.hamburger div {
+	background-color: white;
+	border-radius: 1px;
+	height: 6px;
+	width: 30px;
+}	 
+.hamburger div:not(:last-child) {
+	margin-bottom: 5px; 
+}
+
+/*nav a:visited { color: black; }
+
+nav a.active {
+  background-color: black;
+  color: white;
+}
+*/
+.side-menu nav, .hamburger, .cover {
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+}
+
+.sidenav-active .side-menu nav, .sidenav-active .hamburger, .sidenav-active .cover {
+  -webkit-transform: translateX(225px);
+  -ms-transform: translateX(225px);
+  transform: translateX(225px);
+}
+
+.main {
+  -webkit-transition: margin-left .3s;
+  transition: margin-left .3s;
+}
+
+.sidenav-active .main { margin-left: 225px; }
+
+section {
+  color: white;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+}
+
+section h1 { font-size: 1.75em; }
+
+section h1, section p { margin: 0; }
+
+section:nth-child(1) { background-color: #34495E; }
+
+section:nth-child(2) { background-color: #3498DB; }
+
+section:nth-child(3) { background-color: #8E44AD; }
