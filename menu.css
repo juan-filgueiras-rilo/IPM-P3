@@ -1,5 +1,6 @@
 .menu {
 	position: fixed;
+	display: block;
 }
 
 .sub-menu {
@@ -13,37 +14,43 @@
 	margin: 0;
 	padding: 0;
 	background-color: #111;
-	text-align: center;
+	text-align: left;
 }
 
 .main-item {
-	display:block;
+	transition: background .35s ease-in-out;
 }
 
 .main-item a {
-	transition: background .25s ease-in-out;
 	background-color: #111;
-	color:white;
+	color: white;
+	transition: background .35s ease-in-out;
 }
 
 .main-item > .sub-menu {
 	display:none;
 }
 
-.main-item:hover {
+.main-item:hover, .main-item:hover > a {
 	background-color: #444;
 }
 
 .main-item:hover > .sub-menu {
-	display:block;
+	display: block;
 	background-color: #365;
 	height: auto;
 }
 
-.sub-item:hover {
-	
+.sub-item {
+	transition: background .35s ease-in-out;
 }
 
-.sub-menu a {
-	transition: background .25s ease-in-out;
+.sub-item:hover, .sub-item:hover > a {
+	background-color: #368;
+}
+
+.sub-item a {
+	background-color: #365;
+	color:black;
+	transition: background .35s ease-in-out;
 }
