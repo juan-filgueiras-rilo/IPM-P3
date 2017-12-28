@@ -10,14 +10,16 @@ body {
 /*Sidenav*/
 .side-menu nav {
 	position: fixed;
-	display: inline-block;
+	flex-flow: row wrap;
+	display: flex;
+	overflow: hidden;
 	left: -225px;
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
 }
 
 .sub-menu {
-	position:relative;
+	position: relative;
 }
 
 .menu, .sub-menu {
@@ -30,10 +32,17 @@ body {
 	text-align: left;
 }
 
+.main-item {
+	border-width: 2px 2px 1px;
+	border-style: solid;
+}
+
 .main-item a {
 	display: block;
 	background-color: #111;
 	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
 	transition: background .35s ease-in-out;
 }
 
