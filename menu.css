@@ -1,0 +1,148 @@
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  font-family: sans-serif;
+}
+/*Toda la página*/
+body {
+	background-color: black;
+}
+/*Header con el botón y el nombre/logo? de Isla Negra*/
+.cabecera {
+	position:fixed;
+	width:100%;
+	height:60px;
+	background-color: black;
+}
+/*Sidenav div nav*/
+.side-menu nav {
+	height: 100%;
+    width: 225px;
+	background-color: black;
+	position: fixed;
+	overflow: auto;
+	left: -225px;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+/*Menus -- ul*/
+.menu, .sub-menu {
+	list-style-type: none;/*Sin puntos en las listas*/
+	margin: 0;/*Sin margen*/
+	padding: 0;/*Sin espaciado*/
+	background-color: #111; /*Casi negro*/
+	text-align: left; /*Alineacion a la izq*/
+}
+/*En el desplegable, hacemos que no se muestre de primeras*/
+.sub-menu {
+	display:none;
+}
+/*Elementos en forma de rectángulo con márgenes, cuadrados de 14x16 con transición cuando pasas por encima*/
+.main-item {
+	background-color: #111;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: background .35s ease-in-out;
+	border-width: 0px 0px 0px;
+	border-style: solid;
+}
+
+/*Links de dentro, */
+.main-item:hover {
+	background-color: #888;
+	cursor: pointer;
+}
+
+/*.main-item:hover > .sub-menu {
+	display: block;
+	background-color: #365;
+	height: auto;
+}*/
+
+/*Usado para aplicarlo sobre sub-menús con display:none mediante js*/
+.dropdown {
+	display: inline;
+	background-color: #333;
+	width: 100%;
+	height: auto;
+}
+
+.sub-item {
+	border-width: 0px 0px 0px;
+	border-style: solid;
+	transition: background .35s ease-in-out;
+}
+
+.sub-item:hover {
+	background-color: #368;
+}
+
+.sub-item a {
+	background-color: #365;
+	color:black;
+	transition: background .35s ease-in-out;
+}
+
+/*Hamburger button*/
+.hamburger {
+	position: fixed;
+	z-index: 9999;
+	padding: 15px;
+}
+ 
+.hamburger:hover {
+	cursor: pointer;
+}
+ 
+.hamburger div {
+	background-color: white;
+	border-radius: 1px;
+	height: 6px;
+	width: 30px;
+}	 
+.hamburger div:not(:last-child) {
+	margin-bottom: 5px; 
+}
+
+/*nav a:visited { color: black; }
+
+nav a.active {
+  background-color: black;
+  color: white;
+}
+*/
+.side-menu nav, .hamburger, .cover {
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+}
+
+.sidenav-active .side-menu nav, /*.sidenav-active .hamburger,*/ .sidenav-active .cover {
+  -webkit-transform: translateX(225px);
+  -ms-transform: translateX(225px);
+  transform: translateX(225px);
+}
+
+.main {
+  -webkit-transition: margin-left .3s;
+  transition: margin-left .3s;
+}
+
+/*.sidenav-active .main { margin-left: 225px; }
+*/
+section {
+  color: white;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+}
+
+section h1 { font-size: 1.75em; }
+
+section h1, section p { margin: 0; }
+
+section:nth-child(1) { background-color: #34495E; }
+
+section:nth-child(2) { background-color: #3498DB; }
+
+section:nth-child(3) { background-color: #8E44AD; }
