@@ -11,7 +11,7 @@ body {
 .cabecera {
 	position:fixed;
 	width:100%;
-	height:60px;
+	height:48px;
 	background-color: black;
 }
 /*Sidenav div nav*/
@@ -39,6 +39,7 @@ body {
 }
 /*Elementos en forma de rectángulo con márgenes, cuadrados de 14x16 con transición cuando pasas por encima*/
 .main-item {
+	height: 48px;
 	background-color: #111;
 	color: white;
 	padding: 14px 16px;
@@ -88,7 +89,7 @@ body {
 .hamburger {
 	position: fixed;
 	z-index: 9999;
-	padding: 15px;
+	padding: 15px 13px;
 }
  
 .hamburger:hover {
@@ -98,11 +99,11 @@ body {
 .hamburger div {
 	background-color: white;
 	border-radius: 1px;
-	height: 6px;
-	width: 30px;
+	height: 4px;
+	width: 22px;
 }	 
 .hamburger div:not(:last-child) {
-	margin-bottom: 5px; 
+	margin-bottom: 3px; 
 }
 
 /*nav a:visited { color: black; }
