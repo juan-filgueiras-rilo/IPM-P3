@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang=es>
+  <head>
+    <title>Isla Negra</title>
+    <link rel="stylesheet" type="text/css" href="./css/menu.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="KEYWORDS" content="Baldur's Gate, Baldur's 2, Baldurs, Icewind Dale, Icewind, Planescape, Torment, Neverwinter Nights, Black Isle, Isla Negra, Bioware, ">
+  </head>
+  <body>
+    <div class="cabecera">
+        <div class="hamburger" id="hamburger" onclick="toggleSidenav();">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <img class="img-cabecera" src="./img/LogoAlto.jpg">
+    </div>
+    <div class="side-menu">
+      <nav>
+        <ul class="menu">
+          <li class="main-item">
+          	<button class="exit" onclick="toggleSidenav();">&larr;</button>
+          </li>
+          <li class="main-item">Inicio</li>
+          <li class="main-item" onclick="dropdown('BaldursGate');">Baldur's Gate</li>
+          <ul class="sub-menu" id="BaldursGate">
+            <li class="sub-item">El Juego</li>
+            <li class="sub-item">Guía</li>
+            <li class="sub-item">Personajes</li>
+            <li class="sub-item">Tales Of Sword Coast</li>
+            <li class="sub-item">Trucos</li>
+          </ul>
+          <li class="main-item" onclick="dropdown('BaldursGateII');">Baldur's Gate II </li>
+          <ul class="sub-menu" id="BaldursGateII">
+            <li class="sub-item">Gu&iacute;a</li>
+            <li class="sub-item">Personajes</li>
+            <li class="sub-item">Dominios</li>
+            <li class="sub-item">Objetos BG2 y ToB</li>
+            <li class="sub-item">Consejos</li>
+            <li class="sub-item">Throne of Baal</li>
+            <li class="sub-item">Gran Ud. Met&aacute;lica</li>
+            <li class="sub-item">Trucos</li>
+          </ul>
+          <li class="main-item" onclick="dropdown('IcewindDale');">Icewind Dale</li>
+          <ul class="sub-menu" id="IcewindDale">
+            <li class="sub-item">Gu&iacute;a</li>
+            <li class="sub-item">Grupo</li>
+            <li class="sub-item">Heart of Winter</li>
+            <li class="sub-item">Trials of Luremaster</li>
+            <li class="sub-item">Trucos</li>
+          </ul>
+          <li class="main-item" onclick="dropdown('IcewindDaleII');">Icewind Dale II</li>
+          <ul class="sub-menu" id="IcewindDaleII">
+            <li class="sub-item">Traducción: Español</li>
+          </ul>
+          <li class="main-item" onclick="dropdown('NeverwinterN');">Neverwinter N.</li>
+          <ul class="sub-menu" id="NeverwinterN">
+            <li class="sub-item">Gu&iacute;a</li>
+            <li class="sub-item">Model Viewer</li>
+            <li class="sub-item">Trucos</li>
+          </ul>
+          <li class="main-item" onclick="dropdown('Planescape');">Planescape</li>
+          <ul class="sub-menu" id="Planescape">
+            <li class="sub-item">Gu&iacute;a</li>
+            <li class="sub-item">Personajes</li>
+            <li class="sub-item">Traducción: Español</li>
+          </ul>
+          <li class="main-item">Descargas</li>
+          <li class="main-item" onclick="dropdown('About');">Sobre Nosotros</li>
+          <ul class="sub-menu" id="About">
+            <li class="sub-item">Formulario</li>
+            <li class="sub-item">Foros</li>
+            <li class="sub-item">Quiénes somos</li>
+          </ul>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <section>
+        
+        <h3>La web especializada en los juegos de Rol para PC de Dungeons&Dragons</h3>      </section>
+    </div>
+    <script async="" src="./js/menu.js"></script>
+  </body>
+</html>
