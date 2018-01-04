@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+
 * { 
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -10,43 +12,80 @@ html, body {
 	vertical-align: baseline;
 }
 /*Toda la página*/
-body {
-	background: #fff;
+body input, select, textarea{
+	background-color: #111;
 	color: #888;
-	font-size: 16pt;
+	font-size: 12pt;
 	font-weight: 400;
 	line-height: 1.75em;
 }
 /*Header con el botón y el nombre/logo? de Isla Negra*/
 .cabecera {
+	z-index: 9997;
 	position: fixed;
 	width: 100%;
 	text-align: center;
-	font-size: 72px;
-	line-height: 108px;
-	height: 108px;
+	line-height: 8em;
+	height: 8em;
 	background-color: black;
 	top:0;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+/*Hamburger button*/
+.hamburger {
+
+	z-index: 9998;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #1F3C39;
+	padding: 1.5em 1.5em;
+	height: inherit;
 }
 
-.sticky + .contenido {
-  padding-top: 102px;
+.hamburger:hover {
+	cursor: pointer;
 }
+
+.hamburger div {
+	background-color: white;
+	border-radius: 2px;
+	height: 1.2em;
+	width: 8em;
+}
+
+.hamburger div:not(:last-child) {
+	margin-bottom: 0.6em; 
+}
+
+/*nav a:visited { color: black; }
+
+nav a.active {
+  background-color: black;
+  color: white;
+}
+*/
+.side-menu nav, .hamburger, .cover {
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+  transition: transform .3s;
+}
+
+.sidenav-active .side-menu nav, .sidenav-active .cover {
+	-webkit-transform: translateX(35em);
+	transform: translateX(35em);
+}
+
 /*Sidenav div nav*/
 .side-menu nav {
+	z-index: 9999;
 	top: 0;
 	height: 100%;
-    width: 225px;
+    width: 35em;
 	background-color: black;
 	position: fixed;
 	overflow: auto;
-	left: -225px;
+	left: -35em;
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
 	transition: transform 0.3s;
@@ -65,16 +104,23 @@ body {
 }
 /*Elementos en forma de rectángulo con márgenes, cuadrados de 14x16 con transición cuando pasas por encima*/
 .main-item {
-	height: 48px;
+	margin: 0;
+	height: inherit;
 	background-color: #111;
 	color: white;
-	padding: 14px 16px;
+	padding: 2.5em 2em;
 	text-decoration: none;
 	-webkit-transition: background .35s ease-in-out;
 	-moz-transition: background .35s ease-in-out;
 	transition: background .35s ease-in-out;
-	border-width: 0px 0px 0px;
+	border-width: 0px 0px 1px;
 	border-style: solid;
+}
+
+.main-item > h1, .main-item > button > h1 {
+	color: white;
+	font-size: 3.25em;
+	margin:0;
 }
 /*Links de dentro, */
 .main-item:hover {
@@ -83,39 +129,39 @@ body {
 }
 
 .main-item:first-child {
-	padding: 12px 14px;
+	padding: 2.5em 2em;
 	background-color: #222;
 	transition: none;
 	border-width: 0px 0px 1px;
 	cursor: default;
 }
-/*.main-item:hover > .sub-menu {
-	display: block;
-	background-color: #365;
-	height: auto;
-}*/
-.drop-button {
-	margin: 0;
+
+.exit {
 	padding: 0;
+	margin: 0;
+	border-style: none;
 	background-color: transparent;
-	border-style: solid;
-	border-width: 0px 0px 0px;
-	color: inherit;
-	right: 225px;
+	color: white;
+	top: 10px;
 }
+
+
+.exit:hover {
+	cursor: pointer;
+}
+
 /*Usado para aplicarlo sobre sub-menús con display:none mediante js*/
 .dropdown {
 	display: inline;
-	background-color: #333;
-	width: 100%;
-	height: auto;
 }
 
 .sub-item {
+	font-size: 2em;
+	width: 100%;
 	height: inherit;
-	padding: 8px 28px;
+	padding: 1.5em 1.5em;
 	background-color: #222;
-	color: grey;
+	color: gray;
 	text-decoration: none;
 	border-width: 0px 0px 1px;
 	border-style: solid;
@@ -130,324 +176,74 @@ body {
 
 .sub-item:hover {
 	background-color: #777;
-	color: #FAD892;
+	color: #fad892;
 	border-color: #777;
 }
 
-/*Hamburger button*/
-.hamburger {
-	position: fixed;
-	z-index: 9999;
-	padding: 2.5% ;
-}
- 
-.hamburger:hover {
-	cursor: pointer;
-}
- 
-.hamburger div {
-	background-color: white;
-	border-radius: 1px;
-	height: 4px;
-	width: 22px;
-}
-
-.hamburger div:not(:last-child) {
-	margin-bottom: 3px; 
-}
-
-.exit {
-	padding: 0;
-	margin: 0;
-	border-style: none;
-	background-color: transparent;
-	color: white;
-	font-size: 23px;
-	top: 10px;
-}
-
-.exit:hover {
-	cursor: pointer;
-}
-
-/*nav a:visited { color: black; }
-
-nav a.active {
-  background-color: black;
-  color: white;
-}
-*/
-.side-menu nav, .hamburger, .cover {
-  -webkit-transition: -webkit-transform .3s;
-  -moz-transition: -moz-transform .3s;
-  transition: transform .3s;
-}
-
-.sidenav-active .side-menu nav, .sidenav-active .cover {
-	-webkit-transform: translateX(225px);
-	-ms-transform: translateX(225px);
-	transform: translateX(225px);
-}
-/* Containers */
-
-	.container {
-		margin-left: auto;
-		margin-right: auto;
-		width: 90%;
-	}
-
-	a {
-		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: solid 1px #e4e4e4;
-		color: inherit;
-		text-decoration: none;
-	}
-
-	a:hover {
-		border-bottom-color: transparent;
-		color: #4acaa8;
-	}
-
-	p {
-		margin: 0 0 2.25em 0;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		color: #777;
-		font-weight: 700;
-		line-height: 1em;
-		margin: 0 0 0.5625em 0;
-	}
-
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-		border: 0;
-		color: inherit;
-		text-decoration: none;
-	}
-
-	h2 {
-		font-size: 2em;
-		line-height: 1.5em;
-	}
-
-	h3 {
-		font-size: 1.75em;
-		line-height: 1.5em;
-	}
-
-	h4 {
-		font-size: 1.25em;
-		line-height: 1.5em;
-	}
-
-	h5 {
-		font-size: 0.9em;
-		line-height: 1.5em;
-	}
-
-	h6 {
-		font-size: 0.7em;
-		line-height: 1.5em;
-	}
-
-	.align-left {
-		text-align: left;
-	}
-
-	.align-center {
-		text-align: center;
-	}
-
-	.align-right {
-		text-align: right;
-	}
-
-	header p {
-		color: #aaa;
-		margin: 0 0 1.6875em 0;
-	}
-
-	header h2 + p {
-		font-size: 1.25em;
-		margin-top: -0.5em;
-		line-height: 1.5em;
-	}
-
-	header h3 + p {
-		font-size: 1.1em;
-		margin-top: -0.35em;
-		line-height: 1.5em;
-	}
-
-	header h4 + p,
-	header h5 + p,
-	header h6 + p {
-		font-size: 0.9em;
-		margin-top: -0.25em;
-		line-height: 1.5em;
-	}
-
-	header.major h2 {
-		color: #4acaa8;
-		font-size: 3.5em;
-	}
-
-		header.major h2 + p {
-			color: #777;
-			font-size: 1.75em;
-			font-weight: 700;
-			margin-top: -0.75em;
-		}
-
 /* Wrapper */
 
-	#wrapper {
-		background: #fff;
-		padding-right: 23em;
-	}
+#wrapper {
+	background-color: #111;
+	position: relative;
+	top: 8em;
+	height: 100%;
+	width: 100%;
+}
 
-/* Main */
+.container {
+	font-size: 2em;
+	color: white;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+}
 
-	#main > section {
-		border-top: solid 6px #f4f4f4;
-	}
+.major {
+	font-size: 3em;
+	align-self: center;
+}
 
+.major > h1 {
+	position: absolute;
+	top:0.2em; right: 0.9em; left: 0.9em;
+	color: #FFFFAC;
+	margin: 0;
+	text-align: center;
+}
 
-		#main > section:first-child {
-			border-top: 0;
-		}
+.container > h2 {
+	color: #B7F9CA;
+	font-size: 2em;
+	text-align: center;
+	padding-bottom: 0.3em;
+}
 
+.container > h3 {
+	color: #B7F9F7;
+	text-align: left;
+	font-size: 1.8em;
+	margin-bottom: 0;
+}
 
+.container > h3 > i {
+	color:white;
+} 
 
-/* XLarge */
+.container > p {
+	color: #D0FDF9;
+	font-size: 1.2em;
+	text-align: justify;
+}
 
-	@media screen and (max-width: 1680px) {
+.container > br {
+	display: none;
+}
 
-		/* Basic */
+.container > .heavy {
+	display: block;
+}
 
-			body, input, select, textarea {
-				font-size: 13pt;
-			}
-
-		/* Wrapper */
-
-			#wrapper {
-				padding-right: 21em;
-			}
-
-		/* Main */
-
-			#main > section > .container {
-				padding: 4em 0 2em 0;
-			}
-
-	}
-
-/* Large */
-
-	@media screen and (max-width: 1280px) {
-
-		/* Basic */
-
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
-
-		/* Wrapper */
-
-			#wrapper {
-				padding-right: 20em;
-			}
-
-	}
-
-	@media screen and (max-width: 1024px) {
-
-		/* Basic */
-
-			html, body {
-				overflow-x: hidden;
-			}
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-			#wrapper {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				padding: 44px 0 1px 0;
-			}
-	}
-
-/* Small */
-
-	@media screen and (max-width: 736px) {
-
-		/* Basic */
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-				display: none;
-			}
-
-			h2 {
-				font-size: 1.75em;
-			}
-
-			h3 {
-				font-size: 1.5em;
-			}
-
-			h4 {
-				font-size: 1em;
-			}
-		/* Section/Article */
-
-			header br {
-				display: none;
-			}
-
-			header.major h2 {
-				font-size: 2.5em;
-			}
-
-				header.major h2 + p {
-					font-size: 1.5em;
-				}
-				}
-
-		/* Main */
-
-			#main > section > .container {
-				padding: 2em 0 0 0;
-			}
-
-	}
-
-/* XSmall */
-
-	@media screen and (max-width: 480px) {
-
-		/* Basic */
-
-			html, body {
-				min-width: 320px;
-			}
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-	}
+.container .warning {
+	color:#FF0000;
+}

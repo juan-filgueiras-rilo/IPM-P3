@@ -13,5 +13,17 @@ function toggleSidenav() {
 }
 
 function dropdown(id) {
-	document.getElementById(id).classList.toggle('dropdown');
+	
+	document.getElementById(id).classList.toggle('dropdown');	
 }
+
+/*function color(id) {
+	var is_mobile = false;
+
+    if (/Mobi/.test(navigator.userAgent)) {
+    	is_mobile = true;
+	}
+    if (is_mobile == true) {
+		document.getElementById(id).classList.toggle('colored');
+    }
+}*/
