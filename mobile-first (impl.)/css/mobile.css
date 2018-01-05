@@ -109,7 +109,7 @@ nav a.active {
 	height: inherit;
 	background-color: #111;
 	color: white;
-	padding: 1.5em 2em;
+	padding: 1.2em 2em;
 	text-decoration: none;
 	-webkit-transition: background .35s ease-in-out;
 	-moz-transition: background .35s ease-in-out;
@@ -120,7 +120,7 @@ nav a.active {
 
 .main-item > h1, .main-item > button > h1 {
 	color: white;
-	font-size: 1.7em;
+	font-size: 1.3em;
 	margin:0;
 }
 /*Links de dentro, */
@@ -134,6 +134,11 @@ nav a.active {
 	transition: none;
 	border-width: 0px 0px 1px;
 	cursor: default;
+	height: 5em;
+}
+
+.main-item:first-child > button > h1 {
+	font-size: 2em;
 }
 
 .exit {
@@ -157,10 +162,10 @@ nav a.active {
 }
 
 .sub-item {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	width: 100%;
 	height: inherit;
-	padding: 0.8em 2em;
+	padding: 0.6em 2em;
 	background-color: #222;
 	color: gray;
 	text-decoration: none;
@@ -277,7 +282,7 @@ nav a.active {
     text-align: right;
     align-items: right;
     float: right;
-    padding-left: 3em;
+    padding-left: 2em;
     width: 100%;
 }
 
@@ -392,22 +397,40 @@ nav a.active {
 /************************/
 /* Style the tab */
 .tab {
-    overflow: hidden;
+	display: block;
+    overflow-x: auto;
+	overflow-y: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 90%;
-    margin: auto;
+    height: 2em;
+    margin-left: 5%;
+    margin-right: 5%;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
 }
 
+.tab_list {
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+    padding: 0;
+/*    width: 60em;
+*/}
+
 /* Style the buttons that are used to open the tab content */
-.tab button {
+.tab_list > li {
+	flex-grow: 1;
     background-color: inherit;
-    float: left;
+    float: center;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 0 0.4em;
     transition: 0.3s;
+}
+
+.tablinks {
+	float: left;
 }
 
 /* Change background color of buttons on hover */
@@ -433,10 +456,8 @@ nav a.active {
 
 .inline_img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	overflow:hidden;
-	float: center;
+    margin: auto;
+    width: 100%;
 }
 /*
 
