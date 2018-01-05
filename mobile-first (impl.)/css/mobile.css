@@ -7,15 +7,17 @@
 }
 
 html, body {
+	min-width: 320px;
 	margin: 0;
 	font-family: "Lato", sans-serif;
 	vertical-align: baseline;
+	overflow-x: hidden;
 }
 /*Toda la página*/
-body input, select, textarea{
+body, input, select, textarea {
 	background-color: #111;
 	color: #888;
-	font-size: 12pt;
+	font-size: 10pt;
 	font-weight: 400;
 	line-height: 1.75em;
 }
@@ -26,20 +28,19 @@ body input, select, textarea{
 	width: 100%;
 	text-align: center;
 	line-height: 8em;
-	height: 10em;
+	height: 5em;
 	background-color: black;
 	top:0;
 }
 
 /*Hamburger button*/
 .hamburger {
-
 	z-index: 9998;
 	position: fixed;
 	top: 0;
 	left: 0;
 	background-color: #1F3C39;
-	padding: 2.5em 2.5em;
+	padding: 1em 1em;
 	height: inherit;
 }
 
@@ -50,8 +51,8 @@ body input, select, textarea{
 .hamburger div {
 	background-color: white;
 	border-radius: 2px;
-	height: 1.2em;
-	width: 8em;
+	height: 0.6em;
+	width: 3em;
 }
 
 .hamburger div:not(:last-child) {
@@ -72,8 +73,8 @@ nav a.active {
 }
 
 .sidenav-active .side-menu nav, .sidenav-active .cover {
-	-webkit-transform: translateX(35em);
-	transform: translateX(35em);
+	-webkit-transform: translateX(17em);
+	transform: translateX(17em);
 }
 
 /*Sidenav div nav*/
@@ -81,11 +82,11 @@ nav a.active {
 	z-index: 9999;
 	top: 0;
 	height: 100%;
-    width: 35em;
+    width: 17em;
 	background-color: black;
 	position: fixed;
 	overflow: auto;
-	left: -35em;
+	left: -17em;
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
 	transition: transform 0.3s;
@@ -108,7 +109,7 @@ nav a.active {
 	height: inherit;
 	background-color: #111;
 	color: white;
-	padding: 2.5em 2em;
+	padding: 1.5em 2em;
 	text-decoration: none;
 	-webkit-transition: background .35s ease-in-out;
 	-moz-transition: background .35s ease-in-out;
@@ -119,7 +120,7 @@ nav a.active {
 
 .main-item > h1, .main-item > button > h1 {
 	color: white;
-	font-size: 3.25em;
+	font-size: 1.7em;
 	margin:0;
 }
 /*Links de dentro, */
@@ -129,7 +130,6 @@ nav a.active {
 }
 
 .main-item:first-child {
-	padding: 2.5em 2em;
 	background-color: #222;
 	transition: none;
 	border-width: 0px 0px 1px;
@@ -137,6 +137,7 @@ nav a.active {
 }
 
 .exit {
+	height: 100%;
 	padding: 0;
 	margin: 0;
 	border-style: none;
@@ -156,10 +157,10 @@ nav a.active {
 }
 
 .sub-item {
-	font-size: 2em;
+	font-size: 1.5em;
 	width: 100%;
 	height: inherit;
-	padding: 1.5em 1.5em;
+	padding: 0.8em 2em;
 	background-color: #222;
 	color: gray;
 	text-decoration: none;
@@ -184,28 +185,32 @@ nav a.active {
 
 #wrapper {
 	background-color: #111;
-	position: relative;
-	top: 10em;
+	position: absolute;
+	top: 5em;
 	height: 100%;
 	width: 100%;
+	padding: 44px 0 1px 0;
 }
 
 .container {
-	font-size: 2em;
 	color: white;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 	padding-right: 1.5em;
 	padding-left: 1.5em;
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
 }
 
 .major {
-	font-size: 3em;
 	align-self: center;
+	margin: auto;
+	text-align: center;
 }
 
-.major > h1 {
-	position: absolute;
+.major > h1 {	
+	font-size: 2.7em;
 	top:0.2em; right: 0.9em; left: 0.9em;
 	color: #FFFFAC;
 	margin: 0;
@@ -247,3 +252,185 @@ nav a.active {
 .container .warning {
 	color:#FF0000;
 }
+
+.separador{
+	width: 70%;
+	margin: auto;
+}
+/**********************/
+/*.personajes {
+	color: #D0FDF9;
+	width: 80%;
+	height: 80%;
+	text-align: center;
+	margin: auto;
+}*/
+
+.table {
+	color: #D0FDF9;
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+
+.pj_cage {
+    text-align: right;
+    align-items: right;
+    float: right;
+    padding-left: 3em;
+    width: 100%;
+}
+.pj {
+	display: inline-flex;
+	width: 100%;
+}
+
+.pj_name {
+	width: auto;
+	text-align: center;
+}
+
+.pj_name > h1 {
+	font-size: 1em;
+}
+
+.pj_button {
+	display: none;
+	padding-top: 1em;
+}
+
+.pj_button > button {
+	width: 100%;
+}
+
+.tabla {
+	margin: auto;
+	width: 100%;
+}
+
+.tabla > * > tr > td {
+	padding: 0.5em;
+	text-align: center;
+}
+
+.rojo {
+	color: #FF8383;
+}
+
+.amarillo {
+	color: #FFFFAC;
+}
+
+.verde {
+	color: #B7F9CA;
+}
+
+@media only screen and (max-width: 480px) {
+	
+	tr, thead, td, th, tbody { 
+		display: block;	
+	}
+
+	table {
+		display: none;
+	}
+
+	.pj_button {
+		display: block;
+	}
+
+	.tabla > * > tr > td {
+		padding: 0.5em;
+		text-align: right;
+	}
+
+	.stats {
+		display: block;
+	}
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { 
+		text-align: center;
+		border: 1px solid #ccc;
+	}
+
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		text-align: left;
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Fuerza"; }
+	td:nth-of-type(2):before { content: "Destreza" }
+	td:nth-of-type(3):before { content: "Constitución"; }
+	td:nth-of-type(4):before { content: "Inteligencia"; }
+	td:nth-of-type(5):before { content: "Sabiduría"; }
+	td:nth-of-type(6):before { content: "Carisma"; }
+	td:nth-of-type(7):before { content: "Raza"; }
+	td:nth-of-type(8):before { content: "Clase"; }
+	td:nth-of-type(9):before { content: "Alineamiento"; }
+}
+
+/*
+
+table, thead, tbody, th, td, tr { 
+}
+*/
+/* Hide table headers (but not display: none;, for accessibility) */
+/*thead tr { 
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}*/
+/*
+tr { 
+	text-align: center;
+	border: 1px solid #ccc;
+}
+*/
+/*td { 
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+	padding-left: 50%; 
+}
+*/
+/*td:before { 
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	width: 45%; 
+	padding-right: 10px; 
+	white-space: nowrap;
+}*/
+
+/*
+Label the data
+*/
+/*td:nth-of-type(1):before { content: "Fuerza"; }
+td:nth-of-type(2):before { content: "Destreza" }
+td:nth-of-type(3):before { content: "Constitución"; }
+td:nth-of-type(4):before { content: "Inteligencia"; }
+td:nth-of-type(5):before { content: "Sabiduría"; }
+td:nth-of-type(6):before { content: "Carisma"; }
+td:nth-of-type(7):before { content: "Raza"; }
+td:nth-of-type(8):before { content: "Clase"; }
+td:nth-of-type(9):before { content: "Alineamiento"; }*/
