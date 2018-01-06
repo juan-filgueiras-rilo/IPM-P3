@@ -77,8 +77,35 @@
       </nav>
     </div>
     <div id="wrapper">
+      <div class="container major">
+        <h1>Regístrate en el Foro</h1>
+        <br class="heavy">
+      </div>
+      <form action="">
+        <div class="container">
+          <label><b>Nombre Usuario</b></label>
+          <input type="text" placeholder="Introduce Nombre" name="username" required>
+          <br class="heavy">
+          <label><b>Email</b></label>
+          <input type="text" placeholder="Introduce Email" name="email" title="Es necesario introducir el email completo (con dominio)" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+          <br class="heavy">
+          <label><b>Contraseña</b></label>
+          <input id="psw" type="password" placeholder="Introduce Contraseña" name="psw" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." minlength="8" required>
+          <br class="heavy">
+          <label><b>Repetir Contraseña</b></label>
+          <input id="re_psw" type="password" onkeyup="check();" placeholder="Repite Contraseña" name="psw-repeat" required>
+          <input type="checkbox" checked="checked"> Remember me
+          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <br class="heavy">
+          <div class="clearfix">
+            <button type="button" class="cancelbtn form_button" onclick="writeSection('inicio');">Cancel</button>
+            <button type="submit" class="signupbtn form_button" onclick="register();">Sign Up</button>
+          </div>
+        </div>
+      </form>
     </div>
     <script async="" src="./js/menu.js"></script>
-    <script async="" src="./js/content.js"></script>
-  </body> 
+    <script type="text/javascript" src="./js/formulary.js"></script>
+<!--     <script src="./js/content.js"></script>
+ -->  </body> 
 </html>

@@ -245,6 +245,10 @@ p {
 	text-align: justify;
 }
 
+p > a {
+	color: grey;
+}
+
 br:not(.heavy){
 	display: none;
 }
@@ -448,6 +452,13 @@ br:not(.heavy){
     background-color: #ccc;
 }
 
+
+label {
+	color: #B7F9F7;
+}
+
+
+
 /* Style the tab content */
 .tabcontent {
     display: none;
@@ -483,48 +494,49 @@ br:not(.heavy){
 	color: #F0F638;
 }
 
-/*
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
-table, thead, tbody, th, td, tr { 
+/* Set a style for all buttons */
+.form_button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
-*/
-/* Hide table headers (but not display: none;, for accessibility) */
-/*thead tr { 
-	position: absolute;
-	top: -9999px;
-	left: -9999px;
-}*/
-/*
-tr { 
-	text-align: center;
-	border: 1px solid #ccc;
-}
-*/
-/*td { 
-	border: none;
-	border-bottom: 1px solid #eee; 
-	position: relative;
-	padding-left: 50%; 
-}
-*/
-/*td:before { 
-	position: absolute;
-	top: 6px;
-	left: 6px;
-	width: 45%; 
-	padding-right: 10px; 
-	white-space: nowrap;
-}*/
 
-/*
-Label the data
-*/
-/*td:nth-of-type(1):before { content: "Fuerza"; }
-td:nth-of-type(2):before { content: "Destreza" }
-td:nth-of-type(3):before { content: "Constitución"; }
-td:nth-of-type(4):before { content: "Inteligencia"; }
-td:nth-of-type(5):before { content: "Sabiduría"; }
-td:nth-of-type(6):before { content: "Carisma"; }
-td:nth-of-type(7):before { content: "Raza"; }
-td:nth-of-type(8):before { content: "Clase"; }
-td:nth-of-type(9):before { content: "Alineamiento"; }*/
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
