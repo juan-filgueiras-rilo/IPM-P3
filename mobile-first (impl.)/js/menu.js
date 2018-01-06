@@ -6,7 +6,9 @@ function toggleSidenav() {
 }
 
 function dropdown(id) {
-	closeDrops();
+	if(!document.getElementById(id).classList.contains('dropdown')) {
+		closeDrops();
+	}
 	document.getElementById(id).classList.toggle('dropdown');	
 }
 
@@ -18,7 +20,7 @@ function closeDrops() {
 		if (openDropdown.classList.contains('dropdown')) {
 			openDropdown.classList.remove('dropdown');
 		}
-	}	
+	}
 }
 /*function color(id) {
 	var is_mobile = false;

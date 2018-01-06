@@ -151,7 +151,6 @@ nav a.active {
 	top: 10px;
 }
 
-
 .exit:hover {
 	cursor: pointer;
 }
@@ -240,13 +239,13 @@ nav a.active {
 	color:white;
 } 
 
-.container > p {
+p {
 	color: #D0FDF9;
 	font-size: 1.2em;
 	text-align: justify;
 }
 
-.container > br {
+br:not(.heavy){
 	display: none;
 }
 
@@ -258,7 +257,7 @@ nav a.active {
 	color:#FF0000;
 }
 
-.separador{
+.separador {
 	width: 70%;
 	margin: auto;
 }
@@ -402,11 +401,15 @@ nav a.active {
 	overflow-y: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    height: 2em;
+    height: 4em;
     margin-left: 5%;
     margin-right: 5%;
     -webkit-overflow-scrolling: touch;
     -moz-overflow-scrolling: touch;
+}
+
+.tab::-webkit-scrollbar {
+   	display: none;
 }
 
 .tab_list {
@@ -414,19 +417,21 @@ nav a.active {
 	display: flex;
 	margin: 0;
     padding: 0;
-/*    width: 60em;
-*/}
+    height: 100%;
+}
 
 /* Style the buttons that are used to open the tab content */
 .tab_list > li {
-	flex-grow: 1;
+	height: 100%;
     background-color: inherit;
     float: center;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 0 0.4em;
+    padding: 0.6em 0.8em;
     transition: 0.3s;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 .tablinks {
@@ -434,12 +439,12 @@ nav a.active {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab li:hover {
     background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tab_list > li.active {
     background-color: #ccc;
 }
 
@@ -459,6 +464,25 @@ nav a.active {
     margin: auto;
     width: 100%;
 }
+
+.tabcontent > h1{
+	text-align: left;
+	font-size: 2em;
+	color: #B7F9CA; 
+}
+
+.tabcontent > h2 {
+	text-align: center;
+	font-size: 1.7em;
+	color: #F0F638;
+}
+
+.tabcontent > h3 {
+	text-align: center;
+	font-size: 1.4em;
+	color: #F0F638;
+}
+
 /*
 
 table, thead, tbody, th, td, tr { 
