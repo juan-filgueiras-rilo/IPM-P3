@@ -1,19 +1,64 @@
 function writeSection (id) {
+
 	var xmlhttp;
-	if (id = 'guia') {
-		if (window.XMLHttpRequest) {
-			xmlhttp=new XMLHttpRequest();
-		}
-		else {
-		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		}
+
+	if (window.XMLHttpRequest) {
+		xmlhttp=new XMLHttpRequest();
+	}
+	else {
+		xmlhttp=new ActiveXObject('Microsoft.XMLHTTP');
+	}
+	if(id == 'inicio') {
 		xmlhttp.onreadystatechange=function() {
-		  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-		    document.getElementById("wrapper").innerHTML=xmlhttp.responseText;
-		  }
+			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+				document.getElementById('wrapper').innerHTML=xmlhttp.responseText;
+			}
 		}
-		xmlhttp.open("GET","http://localhost:8000/guia.html",true);
+		//Asincrono
+		xmlhttp.open('GET','http://localhost:8000/inicio.html', true, true);
 		xmlhttp.send();
 	}
-	/*wrapper.innerHTML = content;*/
+	if(id == 'guia') {
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+				document.getElementById('wrapper').innerHTML=xmlhttp.responseText;
+			}
+			var scripts = document.getElementsByTagName('script');
+			var i;
+			var exist = false;
+			for (i = 0; i < scripts.length; i++) {
+				script = scripts[i];
+				if (script.src == "http://localhost:8000/js/guia.js") {
+					exist = true;
+				}
+			}
+			if(!exist) {
+				loadScript('http://localhost:8000/js/guia.js', function() {
+					document.getElementById('defaultOpen').click();
+				});
+			} else {
+				if(!document.getElementById('defaultOpen').classList.contains('active')) { 
+					document.getElementById('defaultOpen').click();
+				}
+			}
+		}
+		//Sincrono, queremos ejecutar el js despues del html cargado
+		xmlhttp.open('GET','http://localhost:8000/guia.html',true, false);
+		xmlhttp.send();
+	}
 }
+
+function loadScript(url, callback) {
+
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+ 
+    script.onload = function() {
+        callback();
+    };
+
+    script.src = url;
+    document.getElementsByTagName('body')[0].appendChild(script);
+}
+
+writeSection('inicio');
