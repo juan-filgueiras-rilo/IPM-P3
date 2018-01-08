@@ -100,6 +100,7 @@ function writeSection (id) {
 		xmlhttp.open('GET','http://localhost:8000/inicio.html', true, true);
 		xmlhttp.send();
 	}*/
+	toggleSidenav();
 }
 
 function loadScript(url, callback) {
