@@ -43,7 +43,7 @@ function writeSection (id) {
 			}
 		}
 		//Sincrono, queremos ejecutar el js despues del html cargado
-		xmlhttp.open('GET','http://localhost:8000/guia.html',true, false);
+		xmlhttp.open('GET','http://localhost:8000/guia.html',true, true);
 		xmlhttp.send();
 	}
 	if(id == 'formulario') {
