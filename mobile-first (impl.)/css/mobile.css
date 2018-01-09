@@ -144,6 +144,9 @@ nav a.active {
 
 .main-item:first-child > button {
 	font-size: 2em;
+	width: 100%;
+	height: 100%;
+	text-align: left;
 }
 
 .exit {

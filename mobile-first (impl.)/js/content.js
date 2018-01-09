@@ -103,6 +103,7 @@ function writeSection (id, esconderMenu) {
 	if (esconderMenu) {
 		toggleSidenav();
 	}
+	window.scrollTo(0,0);
 }
 
 function loadScript(url, callback) {

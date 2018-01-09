@@ -11,3 +11,7 @@ function stats(id) {
 	}
 	document.getElementById(id).classList.toggle('stats');
 }
+
+function getFocus(id) {           
+	document.getElementById(id).focus();
+}
