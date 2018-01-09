@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="./css/mobile.css"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
-    <meta name="KEYWORDS" content="Baldur's Gate, Baldur's 2, Baldurs, Icewind Dale, Icewind, Planescape, Torment, Neverwinter Nights, Black Isle, Isla Negra, Bioware, ">
+    <meta name="KEYWORDS" content="Baldur's Gate, Baldur's 2, Baldurs, Icewind Dale, Icewind, Planescape, Torment, Neverwinter Nights, Black Isle, Isla Negra, Bioware">
   </head>
   <body>
     <div class="cabecera">
@@ -17,65 +17,81 @@
     </div>
     <div class="side-menu">
       <nav>
-        <ul class="menu">
-          <li class="main-item">
+        <div class="menu">
+          <div class="main-item">
           	<button class="exit" onclick="toggleSidenav();">&larr;</button>
-          </li>
-          <li class="main-item active" onclick="writeSection('inicio');"><h1>Inicio</h1></li>
-          <li class="main-item" onclick="dropdown('BaldursGate');"><h1>Baldur's Gate</h1></li>
+          </div>
+          <div class="main-item active" onclick="writeSection('inicio', true);"><h1>Inicio</h1></div>
+          <div class="main-item" onclick="dropdown('BaldursGate');">
+            <h1>Baldur's Gate</h1>
+          </div>
           <ul class="sub-menu" id="BaldursGate">
             <li class="sub-item">El Juego</li>
-            <li class="sub-item" onclick="writeSection('guia');">Guía</li>
-            <li class="sub-item"  onclick="writeSection('personajes');">Personajes</li>
+            <li class="sub-item" onclick="writeSection('guia', true);">Guía</li>
+            <li class="sub-item" onclick="writeSection('personajes', true);">Personajes</li>
             <li class="sub-item">Tales Of Sword Coast</li>
             <li class="sub-item">Trucos</li>
           </ul>
-          <li class="main-item" onclick="dropdown('BaldursGateII');"><h1>Baldur's Gate II</h1></li>
+          <div class="main-item" onclick="dropdown('BaldursGateII');">
+            <h1>Baldur's Gate II</h1>
+          </div>
           <ul class="sub-menu" id="BaldursGateII">
-            <li class="sub-item">Gu&iacute;a</li>
+            <li class="sub-item">Guía</li>
             <li class="sub-item">Personajes</li>
             <li class="sub-item">Dominios</li>
             <li class="sub-item">Objetos BG2 y ToB</li>
             <li class="sub-item">Consejos</li>
             <li class="sub-item">Throne of Baal</li>
-            <li class="sub-item">Gran Ud. Met&aacute;lica</li>
+            <li class="sub-item">Gran Ud. Metálica</li>
             <li class="sub-item">Trucos</li>
           </ul>
-          <li class="main-item" onclick="dropdown('IcewindDale');"><h1>Icewind Dale</h1></li>
+          <div class="main-item" onclick="dropdown('IcewindDale');">
+            <h1>Icewind Dale</h1>
+          </div>
           <ul class="sub-menu" id="IcewindDale">
-            <li class="sub-item">Gu&iacute;a</li>
+            <li class="sub-item">Guía</li>
             <li class="sub-item">Grupo</li>
             <li class="sub-item">Heart of Winter</li>
             <li class="sub-item">Trials of Luremaster</li>
             <li class="sub-item">Trucos</li>
           </ul>
-          <li class="main-item" onclick="dropdown('IcewindDaleII');"><h1>Icewind Dale II</h1></li>
+          <div class="main-item" onclick="dropdown('IcewindDaleII');">
+            <h1>Icewind Dale II</h1>
+          </div>
           <ul class="sub-menu" id="IcewindDaleII">
             <li class="sub-item">Traducción: Español</li>
           </ul>
-          <li class="main-item" onclick="dropdown('NeverwinterN');"><h1>Neverwinter N.</h1></li>
+          <div class="main-item" onclick="dropdown('NeverwinterN');">
+            <h1>Neverwinter N.</h1>
+          </div>
           <ul class="sub-menu" id="NeverwinterN">
-            <li class="sub-item">Gu&iacute;a</li>
+            <li class="sub-item">Guía</li>
             <li class="sub-item">Model Viewer</li>
             <li class="sub-item">Trucos</li>
           </ul>
-          <li class="main-item" onclick="dropdown('Planescape');"><h1>Planescape</h1></li>
+          <div class="main-item" onclick="dropdown('Planescape');">
+            <h1>Planescape</h1>
+          </div>
           <ul class="sub-menu" id="Planescape">
-            <li class="sub-item">Gu&iacute;a</li>
+            <li class="sub-item">Guía</li>
             <li class="sub-item">Personajes</li>
             <li class="sub-item">Traducción: Español</li>
           </ul>
-          <li class="main-item"><h1>Descargas</h1></li>
-          <li class="main-item" onclick="dropdown('About');"><h1>Sobre Nosotros</h1></li>
+          <div class="main-item">
+            <h1>Descargas</h1>
+          </div>
+          <div class="main-item" onclick="dropdown('About');">
+            <h1>Sobre Nosotros</h1>
+          </div>
           <ul class="sub-menu" id="About">
-            <li class="sub-item"  onclick="writeSection('formulario');">Formulario</li>
+            <li class="sub-item"  onclick="writeSection('formulario', true);">Formulario</li>
             <li class="sub-item">Foros</li>
             <li class="sub-item">Quiénes somos</li>
           </ul>
-        </ul>
+        </div>
       </nav>
     </div>
-    <div id="wrapper">
+    <div id="wrapper" class="opacity">
     </div>
     <script async="" src="./js/menu.js"></script>
     <script src="./js/content.js"></script>

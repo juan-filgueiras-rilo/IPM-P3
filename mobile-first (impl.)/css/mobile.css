@@ -67,14 +67,16 @@ nav a.active {
 }
 */
 .side-menu nav, .hamburger, .cover {
-  -webkit-transition: -webkit-transform .3s;
-  -moz-transition: -moz-transform .3s;
-  transition: transform .3s;
+	-webkit-transition: -webkit-transform .3s;
+	-moz-transition: -moz-transform .3s;
+	transition: transform .3s;
+
 }
 
 .sidenav-active .side-menu nav, .sidenav-active .cover {
 	-webkit-transform: translateX(17em);
 	transform: translateX(17em);
+
 }
 
 /*Sidenav div nav*/
@@ -135,6 +137,9 @@ nav a.active {
 	border-width: 0px 0px 1px;
 	cursor: default;
 	height: 5em;
+	position: sticky;
+	top: 0;
+	left: 0;
 }
 
 .main-item:first-child > button {
@@ -158,6 +163,10 @@ nav a.active {
 /*Usado para aplicarlo sobre sub-menús con display:none mediante js*/
 .dropdown {
 	display: inline;
+	width: 100%;
+	list-style-type: none;/*Sin puntos en las listas*/
+	margin: 0;/*Sin margen*/
+	padding: 0;/*Sin espaciado*/
 }
 
 .sub-item {

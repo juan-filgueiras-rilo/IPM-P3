@@ -1,4 +1,4 @@
-function writeSection (id) {
+function writeSection (id, esconderMenu) {
 
 	var xmlhttp;
 
@@ -100,7 +100,9 @@ function writeSection (id) {
 		xmlhttp.open('GET','http://localhost:8000/inicio.html', true, true);
 		xmlhttp.send();
 	}*/
-	toggleSidenav();
+	if (esconderMenu) {
+		toggleSidenav();
+	}
 }
 
 function loadScript(url, callback) {
@@ -116,4 +118,4 @@ function loadScript(url, callback) {
     document.getElementsByTagName('body')[0].appendChild(script);
 }
 
-writeSection('inicio');
+writeSection('inicio',false);
