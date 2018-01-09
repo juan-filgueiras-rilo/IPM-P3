@@ -1,24 +1,33 @@
-<div class="container major">
-  <h1>Regístrate en el Foro</h1>
-  <br class="heavy">
-</div>
-<div class="container">
-  <label><b>Nombre Usuario</b></label>
-  <input id="username" type="text" placeholder="Introduce Nombre" name="username" required>
-  <br class="heavy">
-  <label><b>Email</b></label>
-  <input id="email" type="text" placeholder="Introduce Email" name="email" required>
-  <br class="heavy">
-  <label><b>Contraseña  </b></label><label id="message"></label>
-  <input id="psw" type="password" placeholder="Introduce Contraseña" name="psw" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." minlength="8" required>
-  <br class="heavy">
-  <label><b>Repetir Contraseña</b></label>
-  <input id="re_psw" type="password" onkeyup="check();" placeholder="Repite Contraseña" name="psw-repeat" required>
-  <input type="checkbox" checked="checked"> Recordarme
-  <p>Creando una cuenta, afirmas que estás de acuerdo a nuestros<a href="#">Terminos y Condiciones</a>.</p>
-  <br class="heavy">
-  <div class="clearfix">
-    <button type="button" class="cancelbtn form_button" onclick="writeSection('inicio', false);">Cancel</button>
-    <button type="submit" class="signupbtn form_button" onclick="register();">Sign Up</button>
+<div>
+  <div class="container major">
+    <h1>Regístrate en el Foro</h1>
+    <br class="heavy">
+  </div>
+  <form class="container" action="javascript:register();">
+    <label><b>Nombre Usuario</b></label>
+    <input id="username" type="text" placeholder="Introduce Nombre" name="username" required>
+    <br class="heavy">
+    <label><b>Email</b></label>
+    <input id="email" type="email" placeholder="Introduce Email" name="email" required>
+    <br class="heavy">
+    <label><b>Contraseña  </b></label><label id="message"></label>
+    <input id="psw" type="password" onkeyup="check();" placeholder="Introduce Contraseña" name="psw" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." minlength="8" required>
+    <br class="heavy">
+    <label><b>Repetir Contraseña</b></label>
+    <input id="re_psw" type="password" onkeyup="check();" placeholder="Repite Contraseña" name="psw-repeat" required>
+    <input type="checkbox" checked="checked"> Recordarme
+    <p>Creando una cuenta, afirmas que estás de acuerdo a nuestros <a href="#">Terminos y Condiciones</a>.</p>
+    <br class="heavy">
+    <div class="clearfix">
+      <button type="button" class="cancelbtn form_button" onclick="writeSection('inicio', false);">Cancel</button>
+      <button type="submit" class="signupbtn form_button">Sign Up</button>
+    </div>
+  </form>
+  <div id="modal_success" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h5>¡Te has registrado correctamente!</h5>
+      <button id="returnToInicio" onclick="writeSection('inicio', false)">Volver al Inicio</button>
+    </div>
   </div>
 </div>
