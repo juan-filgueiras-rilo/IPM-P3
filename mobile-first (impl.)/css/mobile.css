@@ -509,8 +509,8 @@ label {
 }
 
 .column {
-	flex: 25%;
-	max-width: 25%;
+	flex: 50%;
+	max-width: 50%;
 	padding: 0 4 px;
 }
 
@@ -521,17 +521,11 @@ label {
 	margin: auto;
 }
 
-@media (max-width: 800px) {
-  .column {
-    flex: 33%;
-    max-width: 33%;
-  }
-}
 
-@media (max-width: 600px) {
+@media (min-width: 760px) {
   .column {
-    flex: 50%;
-    max-width: 50%;
+	flex: 33%;
+	max-width: 33%;
   }
 }
 
