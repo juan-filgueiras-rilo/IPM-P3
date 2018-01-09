@@ -1,529 +1,543 @@
-<div class="container major">
-  <h1>Personajes</h1>
+<div>
+  <div class="container major">
+    <h1 tabindex="0">Personajes</h1>
+    <br class="heavy">
+  </div>
+  <hr class="separador">
   <br class="heavy">
-</div>
-<hr class="separador">
-<br class="heavy">
-<br class="heavy">
-<div class="table">
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Ajantis.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name verde">
-        <h1>Ajantis (Granja al Norte - x 1572 y 3139)</h1>
+  <br class="heavy">
+  <div class="table">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Ajantis.gif" alt="Ajantis" tabindex="0">
       </div>
-      <div class="pj_button">
-        <button onclick="stats('Ajantis');">v</button>
+      <div class="pj_cage">
+        <div class="pj_name verde">
+          <h1 tabindex="0">Ajantis (Granja al Norte - x 1572 y 3139)</h1>
+        </div>
+        <div class="pj_button">
+          <button tabindex="0" onclick="stats('Ajantis');">Mostrar estadísticas</button>
+        </div>
       </div>
     </div>
+    <br class="heavy">
+    <table id="Ajantis" class="tabla verde oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Ajantis</caption>
+      <thead tabindex="0">
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">17</td>
+          <td tabindex="0">13</td>
+          <td tabindex="0">16</td>
+          <td tabindex="0">12</td>
+          <td tabindex="0">13</td>
+          <td tabindex="0">17</td>
+          <td tabindex="0">Humano</td>
+          <td tabindex="0">Paladin</td>
+          <td tabindex="0">Legal Bueno</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Alora.gif" alt="Alora" tabindex="0">
+      </div>
+      <div class="pj_cage">
+        <div class="pj_name verde">
+          <h1 tabindex="0">Alora (Baldur's Gate Oeste - x 1600 y 2200)</h1>
+        </div>
+        <div class="pj_button">
+          <button tabindex="0" onclick="stats('Alora');">Mostrar estadísticas</button>
+        </div>
+      </div>
+    </div>
+    <br class="heavy">
+    <table id="Alora" class="tabla verde oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Alora</caption>
+      <thead>
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">8</td>
+          <td tabindex="0">19</td>
+          <td tabindex="0">12</td>
+          <td tabindex="0">14</td>
+          <td tabindex="0">7</td>
+          <td tabindex="0">10</td>
+          <td tabindex="0">Mediano</td>
+          <td tabindex="0">Ladrón</td>
+          <td tabindex="0">Caótico Bueno</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Coran.gif" alt="Coran" tabindex="0">
+      </div>
+      <div class="pj_cage">
+        <div class="pj_name verde">
+          <h1 tabindex="0">Coran (Bosque de las Capas 1 - x 1515 y 690)</h1>
+        </div>
+        <div class="pj_button">
+          <button tabindex="0" onclick="stats('Coran');">Mostrar estadísticas</button>
+        </div>
+      </div>
+    </div>
+    <br class="heavy">
+    <table id="Coran" class="tabla verde oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Coran</caption>
+      <thead>
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">14</td>
+          <td tabindex="0">20</td>
+          <td tabindex="0">12</td>
+          <td tabindex="0">14</td>
+          <td tabindex="0">9</td>
+          <td tabindex="0">16</td>
+          <td tabindex="0">Elfo</td>
+          <td tabindex="0">Luchador/Ladrón</td>
+          <td tabindex="0">Caótico Bueno</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Dynaheir.gif" alt="Dynaheir" tabindex="0">
+      </div>
+      <div class="pj_cage">
+        <div class="pj_name verde">
+          <h1 tabindex="0">Dynaheir (Baluarte Gnol - x 2530 y 1440)</h1>
+        </div>
+        <div class="pj_button">
+          <button tabindex="0" onclick="stats('Dynaheir');">Mostrar estadísticas</button>
+        </div>
+      </div>
+    </div>
+    <br class="heavy">
+    <table id="Dynaheir" class="tabla verde oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Dynaheir</caption>
+      <thead>
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">11</td>
+          <td tabindex="0">13</td>
+          <td tabindex="0">16</td>
+          <td tabindex="0">17</td>
+          <td tabindex="0">15</td>
+          <td tabindex="0">12</td>
+          <td tabindex="0">Humano</td>
+          <td tabindex="0">Invocador</td>
+          <td tabindex="0">Legal Bueno</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
   </div>
-  <br>
-  <table id="Ajantis" class="tabla verde oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>17</td>
-        <td>13</td>
-        <td>16</td>
-        <td>12</td>
-        <td>13</td>
-        <td>17</td>
-        <td>Humano</td>
-        <td>Paladin</td>
-        <td>Legal Bueno</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Alora.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name verde">
-        <h1>Alora (Baldur's Gate Oeste - x 1600 y 2200)</h1>
+  <div class="table">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Branwen.gif" alt="Branwen" tabindex="0">
       </div>
-      <div class="pj_button">
-        <button onclick="stats('Alora');">v</button>
+      <div class="pj_cage">
+        <div class="pj_name amarillo">
+          <h1 tabindex="0">Branwen (Carnaval Nashkell - x 3250 y 2885)</h1>
+        </div>
+        <div class="pj_button">
+          <button tabindex="0" onclick="stats('Branwen');">Mostrar estadísticas</button>
+        </div>
       </div>
     </div>
+    <br class="heavy">
+    <table id="Branwen" class="tabla amarillo oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Branwen</caption>
+      <thead>
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">13</td>
+          <td tabindex="0">16</td>
+          <td tabindex="0">15</td>
+          <td tabindex="0">9</td>
+          <td tabindex="0">16</td>
+          <td tabindex="0">13</td>
+          <td tabindex="0">Humano</td>
+          <td tabindex="0">Clérigo</td>
+          <td tabindex="0">Neutral Verdadero</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Faldorn.gif" alt="Faldorn" tabindex="0">
+      </div>
+      <div class="pj_cage">
+        <div class="pj_name amarillo">
+          <h1>Faldorn (Bosque de las Capas 3- x 640 y 2885)</h1>
+        </div>
+        <div class="pj_button">
+          <button  tabindex="0" onclick="stats('Faldorn');">Mostrar estadísticas</button>
+        </div>
+      </div>
+    </div>
+    <br class="heavy">
+    <table id="Faldorn" class="tabla amarillo oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Faldorn</caption>
+      <thead>
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">12</td>
+          <td tabindex="0">15</td>
+          <td tabindex="0">11</td>
+          <td tabindex="0">10</td>
+          <td tabindex="0">16</td>
+          <td tabindex="0">15</td>
+          <td tabindex="0">Humano</td>
+          <td tabindex="0">Druida</td>
+          <td tabindex="0">Neutral Verdadero</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Garrick.gif" alt="Garrick" tabindex="0">
+      </div>
+      <div class="pj_cage">
+        <div class="pj_name amarillo">
+          <h1 tabindex="0">Garrick (Beregost - x 2564 y 2284)</h1>
+        </div>
+        <div class="pj_button">
+          <button tabindex="0" onclick="stats('Garrick');">Mostrar estadísticas</button>
+        </div>
+      </div>
+    </div>
+    <br class="heavy">
+    <table id="Garrick" class="tabla amarillo oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Garrick</caption>
+      <thead>
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">14</td>
+          <td tabindex="0">16</td>
+          <td tabindex="0">9</td>
+          <td tabindex="0">13</td>
+          <td tabindex="0">14</td>
+          <td tabindex="0">15</td>
+          <td tabindex="0">Humano</td>
+          <td tabindex="0">Bardo</td>
+          <td tabindex="0">Caótico Neutral</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Jaheira.gif" alt="Jaheira" tabindex="0">
+      </div>
+      <div class="pj_cage">
+        <div class="pj_name amarillo">
+          <h1 tabindex="0">Jaheira (Posada Brazo Amigo - x 329 y 685)</h1>
+        </div>
+        <div class="pj_button">
+          <button tabindex="0" onclick="stats('Jaheira');">Mostrar estadísticas</button>
+        </div>
+      </div>
+    </div>
+    <br class="heavy">
+    <table id="Jaheira" class="tabla amarillo oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Jaheira</caption>
+      <thead>
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">15</td>
+          <td tabindex="0">14</td>
+          <td tabindex="0">17</td>
+          <td tabindex="0">10</td>
+          <td tabindex="0">14</td>
+          <td tabindex="0">15</td>
+          <td tabindex="0">Semielfo</td>
+          <td tabindex="0">Luchador/Druida</td>
+          <td tabindex="0">Legal Neutral</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
   </div>
-  <br>
-  <table id="Alora" class="tabla verde oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>8</td>
-        <td>19</td>
-        <td>12</td>
-        <td>14</td>
-        <td>7</td>
-        <td>10</td>
-        <td>Mediano</td>
-        <td>Ladrón</td>
-        <td>Caótico Bueno</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Coran.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name verde">
-        <h1>Coran (Bosque de las Capas 1 - x 1515 y 690)</h1>
+  <div class="table">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Edwin.gif" alt="Edwin" tabindex="0">
       </div>
-      <div class="pj_button">
-        <button onclick="stats('Coran');">v</button>
+      <div class="pj_cage">
+        <div class="pj_name rojo">
+          <h1 tabindex="0">Edwin (Nashkell - x 2880 y 2960)</h1>
+        </div>
+        <div class="pj_button">
+          <button tabindex="0" onclick="stats('Edwin');">Mostrar estadísticas</button>
+        </div>
       </div>
     </div>
+    <br class="heavy">
+    <table id="Edwin" class="tabla rojo oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Edwin</caption>
+      <thead>
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">9</td>
+          <td tabindex="0">10</td>
+          <td tabindex="0">16</td>
+          <td tabindex="0">18</td>
+          <td tabindex="0">9</td>
+          <td tabindex="0">10</td>
+          <td tabindex="0">Humano</td>
+          <td tabindex="0">Conjurador</td>
+          <td tabindex="0">Legal Malvado</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Eldoth.gif" alt="Eldoth" tabindex="0">
+      </div>
+      <div class="pj_cage">
+        <div class="pj_name rojo">
+          <h1 tabindex="0">Eldoth (Bosque de las Capas 3 - x 3180 y 3490)</h1>
+        </div>
+        <div class="pj_button">
+          <button tabindex="0" onclick="stats('Eldoth');">Mostrar estadísticas</button>
+        </div>
+      </div>
+    </div>
+    <br class="heavy">
+    <table id="Eldoth" class="tabla rojo oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Eldoth</caption>
+      <thead>
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">16</td>
+          <td tabindex="0">12</td>
+          <td tabindex="0">15</td>
+          <td tabindex="0">13</td>
+          <td tabindex="0">10</td>
+          <td tabindex="0">16</td>
+          <td tabindex="0">Humano</td>
+          <td tabindex="0">Bardo</td>
+          <td tabindex="0">Neutral Malvado</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Kagain.gif" alt="Kagain" tabindex="0">
+      </div>
+      <div class="pj_cage">
+        <div class="pj_name rojo">
+          <h1 tabindex="0">Kagain (Beregost Tienda - x 1510 y 2040)</h1>
+        </div>
+        <div class="pj_button">
+          <button tabindex="0" onclick="stats('Kagain');">Mostrar estadísticas</button>
+        </div>
+      </div>
+    </div>
+    <br class="heavy">
+    <table id="Kagain" class="tabla rojo oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Kagain</caption>
+      <thead>
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">16</td>
+          <td tabindex="0">12</td>
+          <td tabindex="0">20</td>
+          <td>15</td>
+          <td tabindex="0">11</td>
+          <td tabindex="0">8</td>
+          <td tabindex="0">Enano</td>
+          <td tabindex="0">Luchador</td>
+          <td tabindex="0">Legal Malvado</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
+    <div class="pj">
+      <div class="pj_img">
+        <img src="./img/F_Montaron.gif" alt="Montaron" tabindex="0">
+      </div>
+      <div class="pj_cage">
+        <div class="pj_name rojo">
+          <h1 tabindex="0">Montaron (Área Este de Candelero - x 4515 y 2707)</h1>
+        </div>
+        <div class="pj_button">
+          <button tabindex="0" onclick="stats('Montaron');">Mostrar estadísticas</button>
+        </div>
+      </div>
+    </div>
+    <br class="heavy">
+    <table id="Montaron" class="tabla rojo oculto">
+      <caption class="pj_caption" tabindex="0">Estadísticas Montaron</caption>
+      <thead>
+        <tr> 
+          <th tabindex="0">Fuerza</th>
+          <th tabindex="0">Destreza</th>
+          <th tabindex="0">Constitución</th>
+          <th tabindex="0">Inteligencia</th>
+          <th tabindex="0">Sabiduría</th>
+          <th tabindex="0">Carisma</th>
+          <th tabindex="0">Raza</th>
+          <th tabindex="0">Clase</th>
+          <th tabindex="0">Alineamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td tabindex="0">16</td>
+          <td tabindex="0">17</td>
+          <td tabindex="0">15</td>
+          <td tabindex="0">12</td>
+          <td tabindex="0">13</td>
+          <td tabindex="0">19</td>
+          <td tabindex="0">Mediano</td>
+          <td tabindex="0">Luchador/Ladrón</td>
+          <td tabindex="0">Neutral Malvado</td>
+        </tr>
+      </tbody>
+    </table>
+    <br class="heavy">
   </div>
-  <br>
-  <table id="Coran" class="tabla verde oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>14</td>
-        <td>20</td>
-        <td>12</td>
-        <td>14</td>
-        <td>9</td>
-        <td>16</td>
-        <td>Elfo</td>
-        <td>Luchador/Ladrón</td>
-        <td>Caótico Bueno</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Dynaheir.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name verde">
-        <h1>Dynaheir (Baluarte Gnol - x 2530 y 1440)</h1>
-      </div>
-      <div class="pj_button">
-        <button onclick="stats('Dynaheir');">v</button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <table id="Dynaheir" class="tabla verde oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>11</td>
-        <td>13</td>
-        <td>16</td>
-        <td>17</td>
-        <td>15</td>
-        <td>12</td>
-        <td>Humano</td>
-        <td>Invocador</td>
-        <td>Legal Bueno</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-</div>
-<div class="table">
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Branwen.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name amarillo">
-        <h1>Branwen (Carnaval Nashkell - x 3250 y 2885)</h1>
-      </div>
-      <div class="pj_button">
-        <button onclick="stats('Branwen');">v</button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <table id="Branwen" class="tabla amarillo oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>13</td>
-        <td>16</td>
-        <td>15</td>
-        <td>9</td>
-        <td>16</td>
-        <td>13</td>
-        <td>Humano</td>
-        <td>Clérigo</td>
-        <td>Neutral Verdadero</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Faldorn.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name amarillo">
-        <h1>Faldorn (Bosque de las Capas 3- x 640 y 2885)</h1>
-      </div>
-      <div class="pj_button">
-        <button onclick="stats('Faldorn');">v</button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <table id="Faldorn" class="tabla amarillo oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>12</td>
-        <td>15</td>
-        <td>11</td>
-        <td>10</td>
-        <td>16</td>
-        <td>15</td>
-        <td>Humano</td>
-        <td>Druida</td>
-        <td>Neutral Verdadero</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Garrick.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name amarillo">
-        <h1>Garrick (Beregost - x 2564 y 2284)</h1>
-      </div>
-      <div class="pj_button">
-        <button onclick="stats('Garrick');">v</button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <table id="Garrick" class="tabla amarillo oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>14</td>
-        <td>16</td>
-        <td>9</td>
-        <td>13</td>
-        <td>14</td>
-        <td>15</td>
-        <td>Humano</td>
-        <td>Bardo</td>
-        <td>Caótico Neutral</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Jaheira.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name amarillo">
-        <h1>Jaheira (Posada Brazo Amigo - x 329 y 685)</h1>
-      </div>
-      <div class="pj_button">
-        <button onclick="stats('Jaheira');">v</button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <table id="Jaheira" class="tabla amarillo oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>15</td>
-        <td>14</td>
-        <td>17</td>
-        <td>10</td>
-        <td>14</td>
-        <td>15</td>
-        <td>Semielfo</td>
-        <td>Luchador/Druida</td>
-        <td>Legal Neutral</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-</div>
-<div class="table">
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Edwin.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name rojo">
-        <h1>Edwin (Nashkell - x 2880 y 2960)</h1>
-      </div>
-      <div class="pj_button">
-        <button onclick="stats('Edwin');">v</button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <table id="Edwin" class="tabla rojo oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>9</td>
-        <td>10</td>
-        <td>16</td>
-        <td>18</td>
-        <td>9</td>
-        <td>10</td>
-        <td>Humano</td>
-        <td>Conjurador</td>
-        <td>Legal Malvado</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Eldoth.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name rojo">
-        <h1>Eldoth (Bosque de las Capas 3 - x 3180 y 3490)</h1>
-      </div>
-      <div class="pj_button">
-        <button onclick="stats('Eldoth');">v</button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <table id="Eldoth" class="tabla rojo oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>16</td>
-        <td>12</td>
-        <td>15</td>
-        <td>13</td>
-        <td>10</td>
-        <td>16</td>
-        <td>Humano</td>
-        <td>Bardo</td>
-        <td>Neutral Malvado</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Kagain.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name rojo">
-        <h1>Kagain (Beregost Tienda - x 1510 y 2040)</h1>
-      </div>
-      <div class="pj_button">
-        <button onclick="stats('Kagain');">v</button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <table id="Kagain" class="tabla rojo oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>16</td>
-        <td>12</td>
-        <td>20</td>
-        <td>15</td>
-        <td>11</td>
-        <td>8</td>
-        <td>Enano</td>
-        <td>Luchador</td>
-        <td>Legal Malvado</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <div class="pj">
-    <div class="pj_img">
-      <img src="./img/F_Montaron.gif">
-    </div>
-    <div class="pj_cage">
-      <div class="pj_name rojo">
-        <h1>Montaron (Área Este de Candelero - x 4515 y 2707)</h1>
-      </div>
-      <div class="pj_button">
-        <button onclick="stats('Montaron');">v</button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <table id="Montaron" class="tabla rojo oculto">
-    <thead>
-      <tr> 
-        <th>Fuerza</th>
-        <th>Destreza</th>
-        <th>Constitución</th>
-        <th>Inteligencia</th>
-        <th>Sabiduría</th>
-        <th>Carisma</th>
-        <th>Raza</th>
-        <th>Clase</th>
-        <th>Alineamiento</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr> 
-        <td>16</td>
-        <td>17</td>
-        <td>15</td>
-        <td>12</td>
-        <td>13</td>
-        <td>19</td>
-        <td>Mediano</td>
-        <td>Luchador/Ladrón</td>
-        <td>Neutral Malvado</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
 </div>

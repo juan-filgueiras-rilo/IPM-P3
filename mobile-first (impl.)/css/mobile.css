@@ -233,21 +233,22 @@ nav a.active {
 	text-align: center;
 }
 
-.container > h2 {
+.container > section > h2, .container > article > h2 {
 	color: #B7F9CA;
 	font-size: 2em;
 	text-align: center;
 	padding-bottom: 0.3em;
 }
 
-.container > h3 {
+.container > section > article > h3 {
 	color: #B7F9F7;
 	text-align: left;
 	font-size: 1.8em;
 	margin-bottom: 0;
+	line-height: 1.3em;
 }
 
-.container > h3 > i {
+.container section > article > h3 > i {
 	color:white;
 }
 
@@ -273,6 +274,7 @@ p > a {
 p > i {
 	text-decoration-line: underline;
 }
+
 br:not(.heavy){
 	display: none;
 }
@@ -295,6 +297,10 @@ br:not(.heavy){
 	margin-right: auto;
 	margin-left: auto;
 	width: 90%;
+}
+
+.pj_caption {
+	display: table-caption;
 }
 
 .pj_cage {
@@ -355,6 +361,10 @@ br:not(.heavy){
 		display: block;	
 	}
 
+	.pj_caption {
+		display: inherit;
+	}
+
 	table {
 		display: none;
 	}
@@ -371,7 +381,7 @@ br:not(.heavy){
 	.stats {
 		display: block;
 	}
-	/* Hide table headers (but not display: none;, for accessibility) */
+	/*Se esconden pero no se ocultan por temas de accesibilidad*/
 	thead tr { 
 		position: absolute;
 		top: -9999px;
@@ -399,9 +409,7 @@ br:not(.heavy){
 		padding-right: 10px; 
 		white-space: nowrap;
 	}
-	/*
-	Label the data
-	*/
+
 	td:nth-of-type(1):before { content: "Fuerza"; }
 	td:nth-of-type(2):before { content: "Destreza" }
 	td:nth-of-type(3):before { content: "Constitución"; }
@@ -499,19 +507,19 @@ label {
 }
 
 
-.tabcontent > h1{
+.tabcontent > section > h2 {
 	text-align: left;
 	font-size: 2em;
 	color: #B7F9CA; 
 }
 
-.tabcontent > h2 {
+.tabcontent > section > article > h3 {
 	text-align: center;
 	font-size: 1.7em;
 	color: #F0F638;
 }
 
-.tabcontent > h3 {
+.tabcontent > section > article > h4 {
 	text-align: center;
 	font-size: 1.4em;
 	color: #F0F638;

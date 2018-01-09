@@ -1,0 +1,7 @@
+Errores WAI-ARIA:
+
+-Los campos obligatorios del formulario no tienen el atributo aria-required
+-Las imágenes/tablas no disponen de texto alternativo
+-Hacer navegación por teclado
+-Los elementos no disponen de roles ni de estados y/o propiedades
+
