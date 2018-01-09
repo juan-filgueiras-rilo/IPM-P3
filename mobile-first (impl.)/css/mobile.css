@@ -233,7 +233,7 @@ nav a.active {
 	text-align: center;
 }
 
-.container > section > h2 {
+.container > section > h2, .container > article > h2 {
 	color: #B7F9CA;
 	font-size: 2em;
 	text-align: center;
@@ -502,19 +502,19 @@ label {
 }
 
 
-.tabcontent > section > h1 {
+.tabcontent > section > h2 {
 	text-align: left;
 	font-size: 2em;
 	color: #B7F9CA; 
 }
 
-.tabcontent > section > article > h2 {
+.tabcontent > section > article > h3 {
 	text-align: center;
 	font-size: 1.7em;
 	color: #F0F638;
 }
 
-.tabcontent > section > article > h3 {
+.tabcontent > section > article > h4 {
 	text-align: center;
 	font-size: 1.4em;
 	color: #F0F638;
