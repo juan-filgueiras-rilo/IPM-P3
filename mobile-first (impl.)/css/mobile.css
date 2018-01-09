@@ -292,6 +292,10 @@ br:not(.heavy){
 	width: 90%;
 }
 
+caption {
+	width: 100%;
+}
+
 .pj_cage {
     text-align: right;
     float: right;
