@@ -292,6 +292,16 @@ br:not(.heavy){
 	margin-right: auto;
 	margin-left: auto;
 	width: 90%;
+
+}
+
+.subtable {
+	color: #D0FDF9;
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	border: 1px solid #c7e8d6;
+	text-align: center; 
 }
 
 .pj_caption {
@@ -364,11 +374,15 @@ br:not(.heavy){
 		display: none;
 	}
 
+	.subtable {
+		border: none;
+	}
+
 	.pj_button {
 		display: block;
 	}
 
-	.tabla > * > tr > td {
+	.subtable > * > tr > td {
 		padding: 0.5em;
 		text-align: right;
 	}
@@ -385,7 +399,7 @@ br:not(.heavy){
 
 	tr { 
 		text-align: center;
-		border: 1px solid #ccc;
+		border: 1px solid #eee;
 	}
 
 	td { 

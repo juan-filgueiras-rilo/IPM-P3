@@ -21,10 +21,10 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Ajantis" class="tabla verde oculto">
+    <table id="Ajantis" class="subtable verde oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Ajantis</caption>
       <thead tabindex="0">
-        <tr> 
+        <tr"> 
           <th tabindex="0">Fuerza</th>
           <th tabindex="0">Destreza</th>
           <th tabindex="0">Constitución</th>
@@ -36,7 +36,7 @@
           <th tabindex="0">Alineamiento</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody >
         <tr> 
           <td tabindex="0">17</td>
           <td tabindex="0">13</td>
