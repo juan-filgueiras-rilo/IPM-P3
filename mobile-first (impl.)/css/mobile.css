@@ -237,6 +237,10 @@ nav a.active {
 
 .container > h3 > i {
 	color:white;
+}
+
+h4 {
+	text-align: center;
 } 
 
 p {
@@ -477,6 +481,17 @@ label {
     width: 100%;
 }
 
+.grid_container {
+	width: 100%; 
+	display: inline-flex;
+}
+
+.grid_img {
+	display: block; 
+	margin: auto;
+}
+
+
 .tabcontent > h1{
 	text-align: left;
 	font-size: 2em;
@@ -534,6 +549,7 @@ input[type=text], input[type=password] {
     clear: both;
     display: table;
 }
+
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {

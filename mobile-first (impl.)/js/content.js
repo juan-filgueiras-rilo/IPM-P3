@@ -12,6 +12,8 @@ function writeSection (id) {
 		xmlhttp.onreadystatechange=function() {
 			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
 				document.getElementById('wrapper').innerHTML=xmlhttp.responseText;
+				//console.log(document.getElementsByTagName("body")[0])
+				console.log(xmlhttp.response)
 			}
 		}
 		//Asincrono
@@ -90,16 +92,16 @@ function writeSection (id) {
 		xmlhttp.open('GET','http://localhost:8000/personajes.html', true, true);
 		xmlhttp.send();
 	}
-	/*if(id == 'model_viewer') {
+	if(id == 'model_viewer') {
 		xmlhttp.onreadystatechange=function() {
 			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
 				document.getElementById('wrapper').innerHTML=xmlhttp.responseText;
 			}
 		}
 		//Asincrono
-		xmlhttp.open('GET','http://localhost:8000/inicio.html', true, true);
+		xmlhttp.open('GET','http://localhost:8000/model-viewer.html', true, true);
 		xmlhttp.send();
-	}*/
+	}
 }
 
 function loadScript(url, callback) {
