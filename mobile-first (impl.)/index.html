@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="cabecera">
-        <div class="hamburger" role="button" id="hamburger" onclick="toggleSidenav();">
+        <div class="hamburger" id="hamburger" role="button" tabindex="0" onclick="toggleSidenav();" onkeyup="_toggleSidenav(event);">
           <div></div>
           <div></div>
           <div></div>
@@ -17,22 +17,24 @@
     </div>
     <div class="side-menu">
       <nav>
-        <div class="menu" role="menu" tabindex="0">
+        <div class="menu" role="menu">
           <div class="main-item">
-          	<button class="exit" onclick="toggleSidenav();">&larr;</button>
+          	<button id="back_button" class="exit" tabindex="-1" onclick="toggleSidenav();">&larr;</button>
           </div>
-          <div class="main-item active" role="menuitem" tabindex="0" onclick="writeSection('inicio', true);"><h1>Inicio</h1></div>
-          <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('BaldursGate');">
+          <div class="main-item active" role="menuitem" tabindex="-1" onclick="writeSection('inicio', true);" onkeyup="_writeSection(event, 'inicio', true);">
+            <h1>Inicio</h1>
+          </div>
+          <div class="main-item" role="menuitem" tabindex="-1" onclick="dropdown('BaldursGate');" onkeyup="_dropdown(event, 'BaldursGate');">
             <h1>Baldur's Gate</h1>
           </div>
           <ul class="sub-menu" id="BaldursGate">
             <li class="sub-item" role="menuitem" tabindex="0">El Juego</li>
-            <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('guia', true);">Guía</li>
-            <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('personajes', true);">Personajes</li>
+            <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('guia', true);" onkeyup="_writeSection(event, 'guia', true);">Guía</li>
+            <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('personajes', true);" onkeyup="_writeSection(event, 'personajes', true);">Personajes</li>
             <li class="sub-item" role="menuitem" tabindex="0">Tales Of Sword Coast</li>
             <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
           </ul>
-          <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('BaldursGateII');">
+          <div class="main-item" role="menuitem" tabindex="-1" onclick="dropdown('BaldursGateII');" onkeyup="_dropdown(event, 'BaldursGateII');">
             <h1>Baldur's Gate II</h1>
           </div>
           <ul class="sub-menu" id="BaldursGateII">
@@ -45,7 +47,7 @@
             <li class="sub-item" role="menuitem" tabindex="0">Gran Ud. Metálica</li>
             <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
           </ul>
-          <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('IcewindDale');">
+          <div class="main-item" role="menuitem" tabindex="-1" onclick="dropdown('IcewindDale');" onkeyup="_dropdown(event, 'IcewindDale');">
             <h1>Icewind Dale</h1>
           </div>
           <ul class="sub-menu" id="IcewindDale">
@@ -55,21 +57,21 @@
             <li class="sub-item" role="menuitem" tabindex="0">Trials of Luremaster</li>
             <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
           </ul>
-          <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('IcewindDaleII');">
+          <div class="main-item" role="menuitem" tabindex="-1" onclick="dropdown('IcewindDaleII');" onkeyup="_dropdown(event, 'IcewindDaleII');">
             <h1>Icewind Dale II</h1>
           </div>
           <ul class="sub-menu" id="IcewindDaleII">
             <li class="sub-item" role="menuitem" tabindex="0">Traducción: Español</li>
           </ul>
-          <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('NeverwinterN');">
+          <div class="main-item" role="menuitem" tabindex="-1" onclick="dropdown('NeverwinterN');" onkeyup="_dropdown(event, 'NeverwinterN');">
             <h1>Neverwinter N.</h1>
           </div>
           <ul class="sub-menu" id="NeverwinterN">
             <li class="sub-item" role="menuitem" tabindex="0">Guía</li>
-            <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('model_viewer', true)">Model Viewer</li>
+            <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('model_viewer', true)" onkeyup="_writeSection(event, 'model_viewer', true);">Model Viewer</li>
             <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
           </ul>
-          <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('Planescape');">
+          <div class="main-item" role="menuitem" tabindex="-1" onclick="dropdown('Planescape');" onkeyup="_dropdown(event, 'Planescape');">
             <h1>Planescape</h1>
           </div>
           <ul class="sub-menu" id="Planescape">
@@ -77,14 +79,14 @@
             <li class="sub-item" role="menuitem" tabindex="0">Personajes</li>
             <li class="sub-item" role="menuitem" tabindex="0">Traducción: Español</li>
           </ul>
-          <div class="main-item" role="menuitem" tabindex="0">
+          <div class="main-item" role="menuitem" tabindex="-1">
             <h1>Descargas</h1>
           </div>
-          <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('About');">
+          <div class="main-item" role="menuitem" tabindex="-1" onclick="dropdown('About');" onkeyup="_dropdown(event, 'About');">
             <h1>Sobre Nosotros</h1>
           </div>
           <ul class="sub-menu" id="About">
-            <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('formulario', true);">Formulario</li>
+            <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('formulario', true);" onkeyup="_writeSection(event, 'formulario', true);">Formulario</li>
             <li class="sub-item" role="menuitem" tabindex="0">Foros</li>
             <li class="sub-item" role="menuitem" tabindex="0">Quiénes somos</li>
           </ul>

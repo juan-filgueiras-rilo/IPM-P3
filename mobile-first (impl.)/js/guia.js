@@ -1,4 +1,4 @@
-function openTab(evt, tabName) {
+function openTab(tabName) {
 
     var i, tabcontent, tablinks;
 
@@ -14,4 +14,10 @@ function openTab(evt, tabName) {
 
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+}
+
+function _openTab(event, tabName) {
+    if (event.keyCode == 13) {
+        openTab(tabName);
+    }
 }

@@ -12,10 +12,10 @@ function writeSection (id, esconderMenu) {
 		xmlhttp.onreadystatechange=function() {
 			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
 				document.getElementById('wrapper').innerHTML=xmlhttp.responseText;
-			}
+			}			
 		}
 		//Asincrono
-		xmlhttp.open('GET','http://localhost:8000/inicio.txt', true, true);
+		xmlhttp.open('GET','http://localhost:8000/inicio.html', true, true);
 		xmlhttp.send();
 	}
 	if(id == 'guia') {
@@ -43,7 +43,7 @@ function writeSection (id, esconderMenu) {
 			}
 		}
 		//Sincrono, queremos ejecutar el js despues del html cargado
-		xmlhttp.open('GET','http://localhost:8000/guia.txt',true, true);
+		xmlhttp.open('GET','http://localhost:8000/guia.html',true, true);
 		xmlhttp.send();
 	}
 	if(id == 'formulario') {
@@ -65,7 +65,7 @@ function writeSection (id, esconderMenu) {
 			}
 		}
 		//Asincrono
-		xmlhttp.open('GET','http://localhost:8000/formulario.txt', true, true);
+		xmlhttp.open('GET','http://localhost:8000/formulario.html', true, true);
 		xmlhttp.send();
 	} 
 	if(id == 'personajes') {
@@ -87,7 +87,7 @@ function writeSection (id, esconderMenu) {
 			}
 		}
 		//Asincrono
-		xmlhttp.open('GET','http://localhost:8000/personajes.txt', true, true);
+		xmlhttp.open('GET','http://localhost:8000/personajes.html', true, true);
 		xmlhttp.send();
 	}
 	if(id == 'model_viewer') {
@@ -97,7 +97,7 @@ function writeSection (id, esconderMenu) {
 			}
 		}
 		//Asincrono
-		xmlhttp.open('GET','http://localhost:8000/model-viewer.txt', true, true);
+		xmlhttp.open('GET','http://localhost:8000/model-viewer.html', true, true);
 		xmlhttp.send();
 	}
 	if (esconderMenu) {
@@ -117,6 +117,12 @@ function loadScript(url, callback) {
 
     script.src = url;
     document.getElementsByTagName('body')[0].appendChild(script);
+}
+
+function _writeSection(event, id, esconderMenu) {
+	if (event.keyCode == 13) {
+		writeSection(id, esconderMenu);
+	}
 }
 
 writeSection('inicio',false);
