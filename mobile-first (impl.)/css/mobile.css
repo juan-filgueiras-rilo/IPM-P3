@@ -21,6 +21,24 @@ body, input, select, textarea {
 	font-weight: 400;
 	line-height: 1.75em;
 }
+
+@media only screen and (min-width: 768px) {
+	body, input, textarea {
+		font-size: 13pt;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	body, input, textarea {
+		font-size: 16pt;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	body. input, textarea {
+		font-size: 18pt;
+	}
+}
 /*Header con el botón y el nombre/logo? de Isla Negra*/
 .cabecera {
 	z-index: 9997;
@@ -100,6 +118,7 @@ nav a.active {
 	background-color: #111; /*Casi negro*/
 	text-align: left; /*Alineacion a la izq*/
 }
+
 /*En el desplegable, hacemos que no se muestre de primeras*/
 .sub-menu {
 	display:none;
@@ -196,6 +215,88 @@ nav a.active {
 	border-color: #777;
 }
 
+@media only screen and (min-width: 1024px) {
+	.side-menu nav {
+		display: none;
+	}
+	.cabecera {
+		display: none;
+	}
+	.hamburger {
+		display: none;
+	}
+    ul.nav {
+    	z-index: 9999; 
+    	position:fixed;
+    	color: #fad892;
+    	margin: 0 auto;
+    	width: 100%;
+    	display: flex;
+    }
+    ul.nav > li:hover ul {
+    	display: block;
+    }
+    .main-item, .main-item:first-child {
+    	display: table; 
+    	position: relative; 
+    	padding: 1em 10px;
+    	background-color: #222;
+	    transition: none;
+	    cursor: default;
+	    height: 3em;
+	    top: 0;
+	    left: 0;
+	    font-size: 0.8em;
+	    margin: 0;
+    }
+
+    .main-item:hover {
+    	border: 1px solid #666; 
+    	border-bottom: 1px solid white;
+    }
+    .main-item:first-child:hover {
+    	border: 1px solid #666; 
+    	border-bottom: 1px solid white;
+    }
+    .sub-item {
+    	display: block; 
+    	text-decoration: none; 
+    	padding: 7px; 
+    	vertical-align: middle;
+    }
+    .sub-item:hover {
+       	background: #ccc; 
+    	border: 1px solid white;
+    }
+    .sub-menu {
+    	top: 4em;
+    	width: auto;
+    	display: none; 
+    	position: absolute; 
+    	left: -1px; 
+    	border-top-color: white;
+    	margin-top: 1px; 
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+	.main-item, .main-item:first-child {
+		font-size: 1.2em;
+	}
+	.sub-menu {
+    	top: 3.3em;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+
+	.main-item, .main-item:first-child {
+		font-size: 2.2em;
+	}
+
+}
 /* Wrapper */
 
 #wrapper {
@@ -204,6 +305,7 @@ nav a.active {
 	top: 5em;
 	height: 100%;
 	width: 100%;
+	z-index: 1;
 	padding: 44px 0 1px 0;
 }
 
@@ -296,6 +398,15 @@ br:not(.heavy){
 	margin-right: auto;
 	margin-left: auto;
 	width: 90%;
+
+}
+
+.subtable {
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	border: 1px solid #c7e8d6;
+	text-align: center; 
 }
 
 .pj_caption {
@@ -332,12 +443,12 @@ br:not(.heavy){
 	width: 100%;
 }
 
-.tabla {
+.subtable {
 	margin: auto;
 	width: 100%;
 }
 
-.tabla > * > tr > td {
+.subtable > * > tr > td {
 	padding: 0.5em;
 	text-align: center;
 }
@@ -353,7 +464,11 @@ br:not(.heavy){
 .verde {
 	color: #B7F9CA;
 }
-
+@media only screen and (min-width: 768px) {
+	table {
+		font-size: 11pt;
+	}
+}
 @media only screen and (max-width: 480px) {
 	
 	tr, thead, td, th, tbody { 
@@ -368,11 +483,15 @@ br:not(.heavy){
 		display: none;
 	}
 
+	.subtable {
+		border: none;
+	}
+
 	.pj_button {
 		display: block;
 	}
 
-	.tabla > * > tr > td {
+	.subtable > * > tr > td {
 		padding: 0.5em;
 		text-align: right;
 	}
@@ -389,7 +508,7 @@ br:not(.heavy){
 
 	tr { 
 		text-align: center;
-		border: 1px solid #ccc;
+		border: 1px solid #eee;
 	}
 
 	td { 
@@ -494,18 +613,68 @@ label {
     margin: auto;
     width: 100%;
 }
-
-.grid_container {
-	width: 100%; 
-	display: inline-flex;
+/*seguimos mobile FIRSTTT*/
+@media only screen and (min-width: 760px) {
+	.inline_img {
+		margin: 0;
+		display: inline-flex;
+		max-width:100%;
+		width: auto;
+		float: left;
+		padding-right: 1em; 
+	}
 }
 
-.grid_img {
-	display: block; 
+@media only screen and (min-width: 1024px) {
+	.inline_img {
+		margin: 0;
+		max-width:100%;
+		width: auto;
+		padding-right: 1em; 
+	}
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.column {
+	flex: 50%;
+	max-width: 50%;
+	padding: 0 4 px;
+}
+
+.column > img {
+	margin-top: 8px;
+	vertical-align: middle;
+	display: block;
 	margin: auto;
 }
 
 
+@media (min-width: 760px) {
+  .column {
+	flex: 33%;
+	max-width: 33%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .column {
+	flex: 25%;
+	max-width: 25%;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .column {
+	flex: 16.66%;
+	max-width: 16.66%;
+  }
+}
 .tabcontent > section > h2 {
 	text-align: left;
 	font-size: 2em;

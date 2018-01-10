@@ -21,10 +21,10 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Ajantis" class="tabla verde oculto">
+    <table id="Ajantis" class="subtable verde oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Ajantis</caption>
       <thead tabindex="0">
-        <tr> 
+        <tr"> 
           <th tabindex="0">Fuerza</th>
           <th tabindex="0">Destreza</th>
           <th tabindex="0">Constitución</th>
@@ -36,7 +36,7 @@
           <th tabindex="0">Alineamiento</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody >
         <tr> 
           <td tabindex="0">17</td>
           <td tabindex="0">13</td>
@@ -65,7 +65,7 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Alora" class="tabla verde oculto">
+    <table id="Alora" class="subtable verde oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Alora</caption>
       <thead>
         <tr> 
@@ -109,7 +109,7 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Coran" class="tabla verde oculto">
+    <table id="Coran" class="subtable verde oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Coran</caption>
       <thead>
         <tr> 
@@ -153,7 +153,7 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Dynaheir" class="tabla verde oculto">
+    <table id="Dynaheir" class="subtable verde oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Dynaheir</caption>
       <thead>
         <tr> 
@@ -199,7 +199,7 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Branwen" class="tabla amarillo oculto">
+    <table id="Branwen" class="subtable amarillo oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Branwen</caption>
       <thead>
         <tr> 
@@ -243,7 +243,7 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Faldorn" class="tabla amarillo oculto">
+    <table id="Faldorn" class="subtable amarillo oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Faldorn</caption>
       <thead>
         <tr> 
@@ -287,7 +287,7 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Garrick" class="tabla amarillo oculto">
+    <table id="Garrick" class="subtable amarillo oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Garrick</caption>
       <thead>
         <tr> 
@@ -331,7 +331,7 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Jaheira" class="tabla amarillo oculto">
+    <table id="Jaheira" class="subtable amarillo oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Jaheira</caption>
       <thead>
         <tr> 
@@ -377,7 +377,7 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Edwin" class="tabla rojo oculto">
+    <table id="Edwin" class="subtable rojo oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Edwin</caption>
       <thead>
         <tr> 
@@ -421,7 +421,7 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Eldoth" class="tabla rojo oculto">
+    <table id="Eldoth" class="subtable rojo oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Eldoth</caption>
       <thead>
         <tr> 
@@ -465,7 +465,7 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Kagain" class="tabla rojo oculto">
+    <table id="Kagain" class="subtable rojo oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Kagain</caption>
       <thead>
         <tr> 
@@ -509,7 +509,7 @@
       </div>
     </div>
     <br class="heavy">
-    <table id="Montaron" class="tabla rojo oculto">
+    <table id="Montaron" class="subtable rojo oculto">
       <caption class="pj_caption" tabindex="0">Estadísticas Montaron</caption>
       <thead>
         <tr> 
