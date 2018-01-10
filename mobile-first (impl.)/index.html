@@ -15,6 +15,7 @@
           <div></div>
         </div>
     </div>
+    <!-- menu vertical -->
     <div class="side-menu">
       <nav>
         <div class="menu" role="menu" tabindex="0">
@@ -91,6 +92,144 @@
         </div>
       </nav>
     </div>
+
+    <!-- menu horizontal -->
+    <ul class="nav menu">
+      <li class="main-item" role="menuitem" tabindex="0" onclick="writeSection('inicio', false);"> Inicio </li> 
+      <li class="main-item" role="menuitem" tabindex="0"> Baldur's Gate
+          <ul class="sub-menu">
+              <li class="sub-item" role="menuitem" tabindex="0">El Juego</li>
+              <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('guia', false);">Guía</li>
+              <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('personajes', false);">Personajes</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Tales Of Sword Coast</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
+          </ul>
+      </li>
+      <li class="main-item" role="menuitem" tabindex="0"> Baldur's Gate II
+          <ul class="sub-menu">
+              <li class="sub-item" role="menuitem" tabindex="0">Guía</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Personajes</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Dominios</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Objetos BG2 y ToB</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Consejos</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Throne of Baal</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Grand Ud. Metálica</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
+          </ul>
+      </li>
+      <li class="main-item" role="menuitem" tabindex="0"> Icewind Dale
+          <ul class="sub-menu">
+              <li class="sub-item" role="menuitem" tabindex="0">Guía</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Grupo</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Heart of Winter</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Trials of Luremaster</li>
+              <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
+          </ul>
+      </li>
+      <li class="main-item" role="menuitem" tabindex="0"> Icewind Dale II
+        <ul class="sub-menu">
+          <li class="sub-item" role="menuitem" tabindex="0">Traducción: Español</li>
+        </ul>
+      </li>
+      <li class="main-item" role="menuitem" tabindex="0"> NeverwinterN
+        <ul class="sub-menu">
+          <li class="sub-item" role="menuitem" tabindex="0">Guía</li>
+          <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('model_viewer', false)">Model Viewer</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
+        </ul>
+      </li>
+      <li class="main-item" role="menuitem" tabindex="0"> Planescape
+        <ul class="sub-menu">
+          <li class="sub-item" role="menuitem" tabindex="0">Guía</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Personajes</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Traducción: Español</li>
+        </ul>
+      </li>
+      <li class="main-item" role="menuitem" tabindex="0"> Descargas
+      </li>
+      <li class="main-item" role="menuitem" tabindex="0"> Sobre Nosotros
+        <ul class="sub-menu">
+          <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('formulario', false);">Formulario</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Foros</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Quiénes somos</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- <div class="horizontal-menu">
+      <div class="menu" role="menu" tabindex="0">
+        <div class="main-item">
+          <button class="exit" onclick="toggleSidenav();">&larr;</button>
+        </div>
+        <div class="main-item active" role="menuitem" tabindex="0" onclick="writeSection('inicio', true);"><h1>Inicio</h1></div>
+        <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('BaldursGate');">
+          <h1>Baldur's Gate</h1>
+        </div>
+        <ul class="sub-menu" id="BaldursGate">
+          <li class="sub-item" role="menuitem" tabindex="0">El Juego</li>
+          <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('guia', true);">Guía</li>
+          <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('personajes', true);">Personajes</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Tales Of Sword Coast</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
+        </ul>
+        <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('BaldursGateII');">
+          <h1>Baldur's Gate II</h1>
+        </div>
+        <ul class="sub-menu" id="BaldursGateII">
+          <li class="sub-item" role="menuitem" tabindex="0">Guía</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Personajes</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Dominios</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Objetos BG2 y ToB</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Consejos</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Throne of Baal</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Gran Ud. Metálica</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
+        </ul>
+        <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('IcewindDale');">
+          <h1>Icewind Dale</h1>
+        </div>
+        <ul class="sub-menu" id="IcewindDale">
+          <li class="sub-item" role="menuitem" tabindex="0">Guía</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Grupo</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Heart of Winter</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Trials of Luremaster</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
+        </ul>
+        <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('IcewindDaleII');">
+          <h1>Icewind Dale II</h1>
+        </div>
+        <ul class="sub-menu" id="IcewindDaleII">
+          <li class="sub-item" role="menuitem" tabindex="0">Traducción: Español</li>
+        </ul>
+        <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('NeverwinterN');">
+          <h1>Neverwinter N.</h1>
+        </div>
+        <ul class="sub-menu" id="NeverwinterN">
+          <li class="sub-item" role="menuitem" tabindex="0">Guía</li>
+          <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('model_viewer', true)">Model Viewer</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Trucos</li>
+        </ul>
+        <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('Planescape');">
+          <h1>Planescape</h1>
+        </div>
+        <ul class="sub-menu" id="Planescape">
+          <li class="sub-item" role="menuitem" tabindex="0">Guía</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Personajes</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Traducción: Español</li>
+        </ul>
+        <div class="main-item" role="menuitem" tabindex="0">
+          <h1>Descargas</h1>
+        </div>
+        <div class="main-item" role="menuitem" tabindex="0" onclick="dropdown('About');">
+          <h1>Sobre Nosotros</h1>
+        </div>
+        <ul class="sub-menu" id="About">
+          <li class="sub-item" role="menuitem" tabindex="0" onclick="writeSection('formulario', true);">Formulario</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Foros</li>
+          <li class="sub-item" role="menuitem" tabindex="0">Quiénes somos</li>
+        </ul>
+      </div>
+    </div> -->
     <div id="wrapper">
     </div>
     <script async="" src="./js/menu.js"></script>
