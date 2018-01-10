@@ -296,7 +296,6 @@ br:not(.heavy){
 }
 
 .subtable {
-	color: #D0FDF9;
 	margin-right: auto;
 	margin-left: auto;
 	width: 90%;
@@ -338,12 +337,12 @@ br:not(.heavy){
 	width: 100%;
 }
 
-.tabla {
+.subtable {
 	margin: auto;
 	width: 100%;
 }
 
-.tabla > * > tr > td {
+.subtable > * > tr > td {
 	padding: 0.5em;
 	text-align: center;
 }
