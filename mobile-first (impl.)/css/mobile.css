@@ -35,8 +35,8 @@ body, input, select, textarea {
 }
 
 @media only screen and (min-width: 1440px) {
-	body. input, textarea {
-		font-size: 18pt;
+	body, input, textarea {
+		font-size: 16pt;
 	}
 }
 /*Header con el botón y el nombre/logo? de Isla Negra*/
@@ -657,7 +657,7 @@ label {
 .column {
 	flex: 50%;
 	max-width: 50%;
-	padding: 0 4 px;
+	padding: 0 4px;
 }
 
 .column > img {

@@ -6,16 +6,16 @@
 <br class="heavy">
 <div class="tab">
   <ul tabindex="0" class="tab_list">
-    <li tabindex="0" class="tablinks" onclick="openTab('prologo')" onkeyup="_openTab(event, 'prologo');" id="defaultOpen">Prólogo</li>
-    <li tabindex="0" class="tablinks" onclick="openTab('cap1')" onkeyup="_openTab(event, 'cap1');">Cap.1</li>
-    <li tabindex="0" class="tablinks" onclick="openTab('cap2')" onkeyup="_openTab(event, 'cap2');">Cap.2</li>
-    <li tabindex="0" class="tablinks" onclick="openTab('cap3')" onkeyup="_openTab(event, 'cap3');">Cap.3</li>
-    <li tabindex="0" class="tablinks" onclick="openTab('cap4')" onkeyup="_openTab(event, 'cap4');">Cap.4</li>
-    <li tabindex="0" class="tablinks" onclick="openTab('cap5')" onkeyup="_openTab(event, 'cap5');">Cap.5</li>
-    <li tabindex="0" class="tablinks" onclick="openTab('cap6')" onkeyup="_openTab(event, 'cap6');">Cap.6</li>
-    <li tabindex="0" class="tablinks" onclick="openTab('cap7')" onkeyup="_openTab(event, 'cap7');">Cap.7</li>
-    <li tabindex="0" class="tablinks" onclick="openTab('pers')" onkeyup="_openTab(event, 'pers');">Personajes</li>
-    <li tabindex="0" class="tablinks" onclick="openTab('mapa')" onkeyup="_openTab(event, 'mapa');">Mapa</li>
+    <li tabindex="0" class="tablinks" onclick="openTab(event, 'prologo')" onkeyup="_openTab(event, 'prologo');" id="defaultOpen">Prólogo</li>
+    <li tabindex="0" class="tablinks" onclick="openTab(event, 'cap1')" onkeyup="_openTab(event, 'cap1');">Cap.1</li>
+    <li tabindex="0" class="tablinks" onclick="openTab(event, 'cap2')" onkeyup="_openTab(event, 'cap2');">Cap.2</li>
+    <li tabindex="0" class="tablinks" onclick="openTab(event, 'cap3')" onkeyup="_openTab(event, 'cap3');">Cap.3</li>
+    <li tabindex="0" class="tablinks" onclick="openTab(event, 'cap4')" onkeyup="_openTab(event, 'cap4');">Cap.4</li>
+    <li tabindex="0" class="tablinks" onclick="openTab(event, 'cap5')" onkeyup="_openTab(event, 'cap5');">Cap.5</li>
+    <li tabindex="0" class="tablinks" onclick="openTab(event, 'cap6')" onkeyup="_openTab(event, 'cap6');">Cap.6</li>
+    <li tabindex="0" class="tablinks" onclick="openTab(event, 'cap7')" onkeyup="_openTab(event, 'cap7');">Cap.7</li>
+    <li tabindex="0" class="tablinks" onclick="openTab(event, 'pers')" onkeyup="_openTab(event, 'pers');">Personajes</li>
+    <li tabindex="0" class="tablinks" onclick="openTab(event, 'mapa')" onkeyup="_openTab(event, 'mapa');">Mapa</li>
   </ul>
 </div>
 <div id="prologo" class="tabcontent">

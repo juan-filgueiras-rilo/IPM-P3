@@ -41,5 +41,6 @@
         <img src="./img/screen_model_spell09.gif" alt="Efecto de hechizo 9" tabindex="0">
         <h4 tabindex="0">Spell Effect IV</h4>
       </div>
+    </div>
   </article>
 </div>
