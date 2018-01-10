@@ -215,6 +215,10 @@ nav a.active {
 	border-color: #777;
 }
 
+ul.nav {
+	display: none;
+}
+
 @media only screen and (min-width: 1024px) {
 	.side-menu nav {
 		display: none;
@@ -467,6 +471,16 @@ br:not(.heavy){
 @media only screen and (min-width: 768px) {
 	table {
 		font-size: 11pt;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	table {
+		font-size: 13pt;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	table {
+		font-size: 15pt;
 	}
 }
 @media only screen and (max-width: 480px) {

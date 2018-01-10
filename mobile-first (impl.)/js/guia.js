@@ -1,4 +1,4 @@
-function openTab(tabName) {
+function openTab(evt, tabName) {
 
     var i, tabcontent, tablinks;
 
@@ -18,6 +18,6 @@ function openTab(tabName) {
 
 function _openTab(event, tabName) {
     if (event.keyCode == 13) {
-        openTab(tabName);
+        openTab(event, tabName);
     }
 }
